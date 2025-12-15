@@ -1,25 +1,30 @@
-%-----------------PDFLATEX----------------------
-% Pour pdflatex, décommenter les lignes qui suivent
-\usepackage[utf8]{inputenc} % encodage des caractères. choix: utf8, latin1, applemac
-\usepackage[T1]{fontenc}
+%----------------Choix de polices---------------
 
-% choix du style de police (tout commenter pour les polices TeX habituelles [computer modern])
-\usepackage{charter}
-\usepackage[charter, cal=cmcal]{mathdesign}
+%---EB Garamond (ATTENTION (LUA/Xe)LaTeX)
+\usepackage{fontspec}
+\setmainfont{EB Garamond}[
+  Ligatures   = TeX,
+  OpticalSize = On,
+  % Numbers     = OldStyle,
+  SmallCapsFeatures = {LetterSpace=5}
+]
 
-
-% \usepackage{newpxtext}
-% \usepackage[upint]{newpxmath}
-% \usepackage[cal=cm]{mathalfa}
-
-
+% Doit être importé avant unicode math
 \usepackage{amsmath}        % ajoute des environnements mathématiques
-\usepackage{bm}				% ajoute des caractères grecs en gras
+\usepackage{mathtools} % Tools for math formating.
+
+% Police mathématique
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}[Scale=MatchLowercase]
+% \setmathfont[range=\mathscr, Scale=MatchLowercase]{XITS Math}
+\setmathfont[range=\mathcal, Scale=MatchLowercase]{Latin Modern Math}
+
+% \usepackage{bm}				% ajoute des caractères grecs en gras
 \usepackage{setspace} 		% gère l'interligne
 \usepackage[french]{babel}  % comment this line if the thesis is in English
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}}
 \usepackage{cite}
-\usepackage[babel=true,protrusion=true,spacing,tracking]{microtype}
+\usepackage{microtype}
 \usepackage{graphicx}		% gère l'insertion des figures
 \usepackage{subfig}			% permet d'ajouter des sous-figures
 \usepackage{geometry}		% gère les dimensions du document (mise en page)
@@ -46,7 +51,7 @@
 % \usepackage{theme/colors_vert_et_or}
 \usepackage{theme/colors_crimson}
 
-% options PDF. Requiert de compiler avec pdflatex
+% options PDF
 \hypersetup{
     colorlinks=true,         % colorise les liens
     breaklinks=true,         % permet le retour la ligne dans les liens trop longs
@@ -56,7 +61,6 @@
     bookmarksopen=true,      % ouvre les signets PDF au départ
 }
 
-% \usepackage[x11names]{xcolor}
 
 %-----------------------------------------------------------------------------
 % Tableaux
@@ -73,20 +77,16 @@
 %-------------------------------------------------------------------------------
 % Macros
 
-%\newcommand\figpath{./figs} % définit le chemin d'accès aux figures
-%\graphicspath{{figs/}}
 \usepackage[nice]{nicefrac} % Nicer fractions
-\usepackage{bbm} % More bold fonts.
-\usepackage{esint} % Integrals
 \usepackage{cancel} % Allows to scratch expressions.
-\usepackage{mathtools} % Tools for math formating.
 \usepackage{slashed} % Allows to slash individual characters.
 \usepackage{xargs} % Better handling of optional arguments for commands
 \usepackage{macros} % Mes macros LaTeX spécifiques
 
 \newcommand\itsym{$\bullet$} % symbole pour les listes
+
 %-------------------------------------------------------------------------------
-% Figures TiKz
+% Figures TiKz !!!TODO FIX THIS!!!
 \usepackage{tikz}
 \usetikzlibrary{
 	calc,
