@@ -24,4 +24,7 @@ Consult `LICENSE.md`
 
 ### *Todo*
 - Write the contents and structure
-- Add
+- Change structure, such that there isn't a license in the middle of the repo
+- Make sure macros are compatible with new math font
+- Adapt dagger symbol to be less ugly
+- Clean up comments and structure

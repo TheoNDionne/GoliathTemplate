@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex MAIN"] 1765817717.53828 "MAIN.aux" "MAIN.bbl" "MAIN" 1765822676.92149 0
+["bibtex MAIN"] 1765825727.68525 "MAIN.aux" "MAIN.bbl" "MAIN" 1765825730.40315 0
   "./These.bib" 1765812274.46614 1506 0b3f99cb80fa2411453b71550dcc88dc ""
   "./styles/nature-fr.bst" 1765812274.47107 26979 7f9df87a5c53fdbf0a07351a379cff7b ""
-  "MAIN.aux" 1765822676.36046 2490 bb8b107f6c554fc3283c0c867b87ad9f "lualatex"
+  "MAIN.aux" 1765825729.89955 2490 bb8b107f6c554fc3283c0c867b87ad9f "lualatex"
   (generated)
   "MAIN.bbl"
   "MAIN.blg"
   (rewritten before read)
-["lualatex"] 1765822674.14248 "MAIN.tex" "MAIN.pdf" "MAIN" 1765822676.92164 0
+["lualatex"] 1765825727.79836 "MAIN.tex" "MAIN.pdf" "MAIN" 1765825730.40332 0
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1765816340 5541421 df19a3ca965a3aa6d10e15cd6d721932 ""
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond-bold.luc" 1765408175.43823 775389 a3bb4c32b9cb78b1e82977c2126bcadf ""
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond-bolditalic.luc" 1765408174.66122 651881 3a88399370c49ad86e6bd09f871175cc ""
@@ -359,21 +359,21 @@
   "/usr/local/texlive/2025/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1740687098 13566 16df94dd2de231b2bca0aaa0190941fe ""
   "/usr/local/texlive/2025/texmf-var/tex/generic/config/language.dat" 1763136678.83983 6800 37fdab0be9ba7bb0293c58e94484f1e1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1763136723 5656972 e63c911444b5abc7ab6f2dc861b1b43b ""
-  "MAIN.aux" 1765822676.36046 2490 bb8b107f6c554fc3283c0c867b87ad9f "lualatex"
-  "MAIN.bbl" 1765817717.64431 1160 1a283fbb48c6c6a020be80cc94ab691d "bibtex MAIN"
-  "MAIN.brf" 1765822676.36146 34 c5b63af179cec8cc29adedb3e666ac8f "lualatex"
-  "MAIN.lof" 1765822676.36146 253 c4a907f4751187f1b3a850e256c864e7 "lualatex"
-  "MAIN.lot" 1765822676.36146 109 c4c94cf552168d783054511dacc4756e "lualatex"
-  "MAIN.out" 1765822676.36146 1214 c334c6b34ad47cb510c5617d3a7d04aa "lualatex"
-  "MAIN.tex" 1765813114.33417 3625 402c9295b63b67e2efdc9f128cb6f96e ""
-  "MAIN.toc" 1765822676.36146 679 76f259f189ff72a1162fa2f8085953d8 "lualatex"
+  "MAIN.aux" 1765825729.89955 2490 bb8b107f6c554fc3283c0c867b87ad9f "lualatex"
+  "MAIN.bbl" 1765825727.78955 1160 1a283fbb48c6c6a020be80cc94ab691d "bibtex MAIN"
+  "MAIN.brf" 1765825729.90055 34 c5b63af179cec8cc29adedb3e666ac8f "lualatex"
+  "MAIN.lof" 1765825729.90155 253 c4a907f4751187f1b3a850e256c864e7 "lualatex"
+  "MAIN.lot" 1765825729.90155 109 c4c94cf552168d783054511dacc4756e "lualatex"
+  "MAIN.out" 1765825729.90055 1214 c334c6b34ad47cb510c5617d3a7d04aa "lualatex"
+  "MAIN.tex" 1765824711.70852 3681 c076f824c14bbdfd696a805cf08e1264 ""
+  "MAIN.toc" 1765825729.90155 679 76f259f189ff72a1162fa2f8085953d8 "lualatex"
   "figures/pdf/hubbard_1_band.dpth" 1765812274.46772 0 d41d8cd98f00b204e9800998ecf8427e ""
   "figures/pdf/hubbard_1_band.md5" 1765812274.46778 62 451afaf5cb5e785b506586759c3acc3f ""
   "figures/pdf/hubbard_1_band.pdf" 1765812274.46778 19924 636a3417485713aaf35d725a934706d5 ""
   "figures/tikz/hubbard_1_band.tikz" 1765812274.46814 1161 8c0a41612b79dc390f56fe415689d3eb ""
   "macros.sty" 1765812274.4699 3753 0bdb230fff57c879811816fd82bd8243 ""
-  "pdfa.xmpi" 1765822675.51346 5042 1fa3a71483a6248814f475d3faddc4fe "lualatex"
-  "preamble.tex" 1765822565.28746 4025 aadc68b28ad5111ea494c7df44226dd7 ""
+  "pdfa.xmpi" 1765825729.13855 5042 30a2afcf48ca477dd334d86e2d0302bd "lualatex"
+  "preamble.tex" 1765825707.48355 4027 86fe11c85131ee48aa34943579671132 ""
   "sections/debut/introduction.tex" 1765812274.47069 76 f45013131bc97012f9f71bc9244e569f ""
   "sections/debut/page_titre.tex" 1765812274.47073 548 caeabd8ea0110d9a548e2c60ab5dcde4 ""
   "sections/debut/publications.tex" 1765812274.47073 147 e48aacb4a6c1fa1cab9c22ab5ec9bf89 ""

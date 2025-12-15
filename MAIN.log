@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  15 DEC 2025 13:17
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  15 DEC 2025 14:08
  restricted system commands enabled.
 **MAIN.tex
 (./MAIN.tex
@@ -59,14 +59,153 @@ luaotfload | db : Font names database loaded from /home/local/USHERBROOKE/diot08
 \belowcaptionskip=\skip50
 \bibindent=\dimen147
 ) (./preamble.tex
-(/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen148
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count282
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count283
+\leftroot@=\count284
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count285
+\DOTSCASE@=\count286
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count287
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count288
+\dotsspace@=\muskip17
+\c@parentequation=\count289
+\dspbrk@lvl=\count290
+\tag@help=\toks18
+\row@=\count291
+\column@=\count292
+\maxfields@=\count293
+\andhelp@=\toks19
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks20
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count294
+\calc@Bcount=\count295
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count296
+\calc@Cskip=\skip56
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count297
+\l_MT_multwidth_dim=\dimen159
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen160
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen161
+\l_MT_above_intertext_sep=\dimen162
+\l_MT_below_intertext_sep=\dimen163
+\l_MT_above_shortintertext_sep=\dimen164
+\l_MT_below_shortintertext_sep=\dimen165
+\xmathstrut@box=\box55
+\xmathstrut@dim=\dimen166
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip58
+\L@UnitsRaiseTextstyle=\skip59
+\L@UnitsRaiseScriptstyle=\skip60
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+LaTeX Info: Redefining \nicefrac on input line 131.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/slashed.sty
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xargs/xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+\XKV@tempb@toks=\toks25
+)
+\XKV@depth=\count298
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\xargs@max=\count299
+\xargs@toksa=\toks26
+\xargs@toksb=\toks27
+)
+(./macros.sty) (/usr/local/texlive/2025/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-11-06 L3 programming layer (loader) 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2025-10-09 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count282
+\l__color_backend_stack_int=\count300
 Inserting `l3color' in `luaotfload.parse_color'.))
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
@@ -74,20 +213,20 @@ Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count283
-\l__fontspec_language_int=\count284
-\l__fontspec_strnum_int=\count285
-\l__fontspec_tmp_int=\count286
-\l__fontspec_tmpa_int=\count287
-\l__fontspec_tmpb_int=\count288
-\l__fontspec_tmpc_int=\count289
-\l__fontspec_em_int=\count290
-\l__fontspec_emdef_int=\count291
-\l__fontspec_strong_int=\count292
-\l__fontspec_strongdef_int=\count293
-\l__fontspec_tmpa_dim=\dimen148
-\l__fontspec_tmpb_dim=\dimen149
-\l__fontspec_tmpc_dim=\dimen150
+\l__fontspec_script_int=\count301
+\l__fontspec_language_int=\count302
+\l__fontspec_strnum_int=\count303
+\l__fontspec_tmp_int=\count304
+\l__fontspec_tmpa_int=\count305
+\l__fontspec_tmpb_int=\count306
+\l__fontspec_tmpc_int=\count307
+\l__fontspec_em_int=\count308
+\l__fontspec_emdef_int=\count309
+\l__fontspec_strong_int=\count310
+\l__fontspec_strongdef_int=\count311
+\l__fontspec_tmpa_dim=\dimen167
+\l__fontspec_tmpb_dim=\dimen168
+\l__fontspec_tmpc_dim=\dimen169
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
@@ -148,109 +287,6 @@ ig;"
 terspace=5;+tlig;+smcp;"
 
 luaotfload | features : unsupported font option: nil
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip51
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2024/11/17 v2.01 AMS text
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen151
-))
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen152
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count294
-LaTeX Info: Redefining \frac on input line 235.
-\uproot@=\count295
-\leftroot@=\count296
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count297
-\DOTSCASE@=\count298
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen153
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count299
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count300
-\dotsspace@=\muskip17
-\c@parentequation=\count301
-\dspbrk@lvl=\count302
-\tag@help=\toks18
-\row@=\count303
-\column@=\count304
-\maxfields@=\count305
-\andhelp@=\toks19
-\eqnshift@=\dimen154
-\alignsep@=\dimen155
-\tagshift@=\dimen156
-\tagwidth@=\dimen157
-\totwidth@=\dimen158
-\lineht@=\dimen159
-\@envbody=\toks20
-\multlinegap=\skip52
-\multlinetaggap=\skip53
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count306
-\calc@Bcount=\count307
-\calc@Adimen=\dimen160
-\calc@Bdimen=\dimen161
-\calc@Askip=\skip54
-\calc@Bskip=\skip55
-LaTeX Info: Redefining \setlength on input line 86.
-LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count308
-\calc@Cskip=\skip56
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
-\g_MT_multlinerow_int=\count309
-\l_MT_multwidth_dim=\dimen162
-\origjot=\skip57
-\l_MT_shortvdotswithinadjustabove_dim=\dimen163
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen164
-\l_MT_above_intertext_sep=\dimen165
-\l_MT_below_intertext_sep=\dimen166
-\l_MT_above_shortintertext_sep=\dimen167
-\l_MT_below_shortintertext_sep=\dimen168
-\xmathstrut@box=\box55
-\xmathstrut@dim=\dimen169
-)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/unicode-math/unicode-math.sty
 Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 
@@ -528,13 +564,13 @@ Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
 h LuaLaTeX
  (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count310
+\etb@tempcnta=\count312
 )
 Lua module: lualatex-math 2013/08/03 v1.3 Patches for mathematics typesetting wi
 th LuaLaTeX)
-\g__um_fam_int=\count311
-\g__um_fonts_used_int=\count312
-\l__um_primecount_int=\count313
+\g__um_fam_int=\count313
+\g__um_fonts_used_int=\count314
+\l__um_primecount_int=\count315
 \g__um_primekern_muskip=\muskip18
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/unicode-math/unicode-math-table.t
@@ -568,7 +604,7 @@ sFont={},Script=Math,RawFeature={mathfontdimen=xetex},Scale={MatchLowercase}].
 etex;"
 
 LaTeX Font Info:    Font shape `TU/LibertinusMath(0)/m/n' will be
-(Font)              scaled to size 10.20981pt on input line 18.
+(Font)              scaled to size 10.20981pt on input line 31.
 
 Package fontspec Info: 
 (fontspec)             Libertinus Math scale = 0.9324008718276873.
@@ -614,17 +650,17 @@ etex;+ssty=0;"<-7.665>s*[0.9324008718276873]"name:Libertinus
 etex;+ssty=1;"
 
 LaTeX Font Info:    Font shape `TU/LibertinusMath(1)/m/n' will be
-(Font)              scaled to size 10.20981pt on input line 18.
+(Font)              scaled to size 10.20981pt on input line 31.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 18.
+(Font)              `operators' in the math version `normal' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LibertinusMath(1)/m/n on input line 
-18.
+31.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 18.
+(Font)              `operators' in the math version `bold' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LibertinusMath(1)/b/n on input line
- 18.
+ 31.
 
 Package fontspec Info: 
 (fontspec)             Libertinus Math scale = 0.9324008718276873.
@@ -671,15 +707,15 @@ etex;mathfontdimen=tex2;+ssty=0;"<-7.665>s*[0.9324008718276873]"name:Libertinus
 etex;mathfontdimen=tex2;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 18.
+(Font)              `symbols' in the math version `normal' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/LibertinusMath(2)/m/n on input line
- 18.
+ 31.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 18.
+(Font)              `symbols' in the math version `bold' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/LibertinusMath(2)/b/n on input line
- 18.
+ 31.
 
 Package fontspec Info: 
 (fontspec)             Libertinus Math scale = 0.9324008718276873.
@@ -726,33 +762,33 @@ etex;mathfontdimen=tex3;+ssty=0;"<-7.665>s*[0.9324008718276873]"name:Libertinus
 etex;mathfontdimen=tex3;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-8.
+(Font)              `largesymbols' in the math version `normal' on input line 3
+1.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/m/n on input line
- 18.
+ 31.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 18.
+(Font)              `largesymbols' in the math version `bold' on input line 31.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/b/n on input line
- 18.
+ 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(1)/m/n' will be
-(Font)              scaled to size 8.16785pt on input line 18.
+(Font)              scaled to size 8.16785pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(1)/m/n' will be
-(Font)              scaled to size 6.12589pt on input line 18.
+(Font)              scaled to size 6.12589pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 10.20981pt on input line 18.
+(Font)              scaled to size 10.20981pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 8.16785pt on input line 18.
+(Font)              scaled to size 8.16785pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 6.12589pt on input line 18.
+(Font)              scaled to size 6.12589pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 10.20981pt on input line 18.
+(Font)              scaled to size 10.20981pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 8.16785pt on input line 18.
+(Font)              scaled to size 8.16785pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 6.12589pt on input line 18.
+(Font)              scaled to size 6.12589pt on input line 31.
 
 Package fontspec Info: 
 (fontspec)             Latin Modern Math scale = 0.9280719054624225.
@@ -800,18 +836,18 @@ etex;+ssty=0;"<-7.665>s*[0.9280719054624225]"name:Latin
 etex;+ssty=1;"
 
 LaTeX Font Info:    Font shape `TU/LatinModernMath(0)/m/n' will be
-(Font)              scaled to size 10.16235pt on input line 21.
+(Font)              scaled to size 10.16235pt on input line 36.
 \sym__um_fam1=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  TU/LatinModernMath(0)/m/n --> TU/LatinModernMath(0)/m/n
- on input line 21.
+ on input line 36.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  TU/LatinModernMath(0)/m/n --> TU/LatinModernMath(0)/b/n
- on input line 21.
+ on input line 36.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(0)/m/n' will be
-(Font)              scaled to size 8.12988pt on input line 21.
+(Font)              scaled to size 8.12988pt on input line 36.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(0)/m/n' will be
-(Font)              scaled to size 6.09741pt on input line 21.
+(Font)              scaled to size 6.09741pt on input line 36.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
@@ -914,7 +950,7 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \babelcatcodetablenum=\catcodetable14
 \bbl@pattcodes=\catcodetable15
 )
-\babel@savecnt=\count314
+\babel@savecnt=\count316
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
 ne 2050.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
@@ -944,14 +980,14 @@ Language: french 2025-08-15 v4.0e French support from the babel system
 \FB@spacing=\attribute5
 \FB@addDPspace=\attribute6
 \FB@ucsNBSP=\attribute7
-\FBguill@level=\count315
-\FBold@everypar=\toks23
+\FBguill@level=\count317
+\FBold@everypar=\toks28
 \FB@Mht=\dimen171
-\mc@charclass=\count316
-\mc@charfam=\count317
-\mc@charslot=\count318
-\std@mcc=\count319
-\dec@mcc=\count320
+\mc@charclass=\count318
+\mc@charfam=\count319
+\mc@charslot=\count320
+\std@mcc=\count321
+\dec@mcc=\count322
 Inserting `frenchb.french_punctuation' in `kerning'.
 Inserting `frenchb.euphonic_t' in `pre_linebreak_filter'.
 \FB@pardim=\dimen172
@@ -977,18 +1013,18 @@ Package: cite 2015/02/27  v 5.5
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
-\MT@toks=\toks24
+\MT@toks=\toks29
 \MT@tempbox=\box56
-\MT@count=\count321
+\MT@count=\count323
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks25
+\MT@prot@toks=\toks30
 LaTeX Info: Redefining \rightprotrusion on input line 1107.
 LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen180
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count322
+\MT@listname@count=\count324
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-luatex.def
 File: microtype-luatex.def 2025/07/09 v3.2b Definitions specific to luatex (RS)
@@ -997,7 +1033,7 @@ Lua module: microtype 2025/07/09 v3.2b microtype module.
 Module microtype Info: overwriting function `keepligature' on input line 63
 LaTeX Info: Redefining \lsstyle on input line 779.
 LaTeX Info: Redefining \lslig on input line 779.
-\MT@outer@space=\skip58
+\MT@outer@space=\skip61
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -1044,22 +1080,22 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen190
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count323
-\c@continuedfloat=\count324
+\c@caption@flags=\count325
+\c@continuedfloat=\count326
 )
-\c@KVtest=\count325
-\sf@farskip=\skip59
+\c@KVtest=\count327
+\sf@farskip=\skip62
 \sf@captopadj=\dimen191
-\sf@capskip=\skip60
-\sf@nearskip=\skip61
-\c@subfigure=\count326
-\c@subfigure@save=\count327
-\c@lofdepth=\count328
-\c@subtable=\count329
-\c@subtable@save=\count330
-\c@lotdepth=\count331
-\sf@top=\skip62
-\sf@bottom=\skip63
+\sf@capskip=\skip63
+\sf@nearskip=\skip64
+\c@subfigure=\count328
+\c@subfigure@save=\count329
+\c@lofdepth=\count330
+\c@subtable=\count331
+\c@subtable@save=\count332
+\c@lotdepth=\count333
+\sf@top=\skip65
+\sf@bottom=\skip66
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -1070,9 +1106,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count332
-\Gm@cntv=\count333
-\c@Gm@tempcnt=\count334
+\Gm@cnth=\count334
+\Gm@cntv=\count335
+\c@Gm@tempcnt=\count336
 \Gm@bindingoffset=\dimen192
 \Gm@wd@mp=\dimen193
 \Gm@odd@mp=\dimen194
@@ -1081,7 +1117,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutheight=\dimen197
 \Gm@layouthoffset=\dimen198
 \Gm@layoutvoffset=\dimen199
-\Gm@dimlist=\toks26
+\Gm@dimlist=\toks31
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
@@ -1090,10 +1126,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box57
 \shadowsize=\dimen256
 \@Sbox=\box58
-\do@VerbBox=\toks27
-\the@fancyput=\toks28
-\this@fancyput=\toks29
-\EndVerbatimTokens=\toks30
+\do@VerbBox=\toks32
+\the@fancyput=\toks33
+\this@fancyput=\toks34
+\EndVerbatimTokens=\toks35
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
@@ -1102,19 +1138,18 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count335
-\float@exts=\toks31
+\c@float@type=\count337
+\float@exts=\toks36
 \float@box=\box59
-\@float@everytoks=\toks32
+\@float@everytoks=\toks37
 \@floatcapt=\box60
 )
-(/usr/local/texlive/2025/texmf-dist/tex/latex/braket/braket.sty)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pdfx/pdfx.sty
 Package: pdfx 2024/06/24 v1.6.5f PDF/X and PDF/A support (CVR/HTH/RRM/PS)
-\pdfx@minorversion=\count336
-\pdfx@majorversion=\count337
-\pdfmajorversion=\count338
-\pdfminorversion=\count339
+\pdfx@minorversion=\count338
+\pdfx@majorversion=\count339
+\pdfmajorversion=\count340
+\pdfminorversion=\count341
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -1144,7 +1179,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks33
+\pdftexcmds@toks=\toks38
 ){/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/fonts/map/pdftex/updma
 p/pdftex.map}
 warning  (map file): entry for 'dummy-space' already exists, duplicates ignored
@@ -2108,7 +2143,7 @@ n input line 3740.
 LaTeX Encoding Info:    Redeclaring text command \textcopyleft (encoding L8U) o
 n input line 3810.
 )
-\pdfxsafeforxmp@toks=\toks34
+\pdfxsafeforxmp@toks=\toks39
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
@@ -2132,7 +2167,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-\pdfx@tmptoks=\toks35
+\pdfx@tmptoks=\toks40
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -2161,15 +2196,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count340
+\c@section@level=\count342
 )
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen257
-\Hy@linkcounter=\count341
-\Hy@pagecounter=\count342
+\Hy@linkcounter=\count343
+\Hy@pagecounter=\count344
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -2177,7 +2212,7 @@ File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count343
+\Hy@SavedSpaceFactor=\count345
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -2220,14 +2255,14 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 ))
-\c@Hy@tempcnt=\count344
+\c@Hy@tempcnt=\count346
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen258
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count345
+\Fld@menulength=\count347
 \Field@Width=\dimen259
 \Fld@charsize=\dimen260
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -2237,18 +2272,18 @@ Package hyperref Info: backreferencing ON on input line 6091.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode ON on input line 6106.
-\Hy@abspage=\count346
-\c@Item=\count347
-\c@Hfootnote=\count348
+\Hy@abspage=\count348
+\c@Item=\count349
+\c@Hfootnote=\count350
 )
 Package hyperref Info: Driver: hluatex.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hluatex.def
 File: hluatex.def 2025-07-12 v7.01o Hyperref driver for luaTeX
 Package hyperref Info: 񑙳.񑙴:=1.4 on input line 238.
-\Fld@listcount=\count349
-\c@bookmark@seq@number=\count350
-\Hy@SectionHShift=\skip64
+\Fld@listcount=\count351
+\c@bookmark@seq@number=\count352
+\Hy@SectionHShift=\skip67
 )
 Package hyperref Info: Option `psdextra' set `true' on input line 1535.
 
@@ -2338,9 +2373,6 @@ port
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/xmpincl/xmpincl.sty
 Package: xmpincl 2021/09/22 v2.4 Include XMP data in pdflatex
 )
@@ -2355,18 +2387,18 @@ Package pdfx Warning: Setting all color commands to rgb,
 consistent with the Color Model for PDF/A  on input line 3126.
 
 ) (./theme/colors_crimson.sty)
-Package hyperref Info: Option `colorlinks' set `true' on input line 62.
-Package hyperref Info: Option `breaklinks' set `true' on input line 62.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 62.
+Package hyperref Info: Option `colorlinks' set `true' on input line 81.
+Package hyperref Info: Option `breaklinks' set `true' on input line 81.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen261
 \ar@mcellbox=\box61
 \extrarowheight=\dimen262
-\NC@list=\toks36
-\extratabsurround=\skip65
-\backup@length=\skip66
+\NC@list=\toks41
+\extratabsurround=\skip68
+\backup@length=\skip69
 \ar@cellbox=\box62
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/dcolumn.sty
@@ -2403,7 +2435,7 @@ Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line
  370.
 ))
-\footheight=\skip67
+\footheight=\skip70
 Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 217
 9.
 )
@@ -2416,8 +2448,8 @@ Package scrbase Info: Unknown processing state.
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2025/09/09 v3.48 KOMA-Script package (type area)
-\ta@bcor=\skip68
-\ta@div=\count351
+\ta@bcor=\skip71
+\ta@div=\count353
 Package typearea Info: You've used standard option `oneside'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `twoside=false'.
@@ -2430,9 +2462,9 @@ Package typearea Info: You've used standard option `letterpaper'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `paper=letter' there
 (typearea)             instead of `letterpaper', too.
-\ta@hblk=\skip69
-\ta@vblk=\skip70
-\ta@temp=\skip71
+\ta@hblk=\skip72
+\ta@vblk=\skip73
+\ta@temp=\skip74
 Package typearea Info: With paper sizes other than (almost) `A4' predefined
 (typearea)             DIV values do not exist. Using DIV calculation for good
 (typearea)             line width (unless using `version=3.24` or prior).
@@ -2461,48 +2493,15 @@ Package typearea Info: These are the values describing the layout:
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box63
-\beforetitleunit=\skip72
-\aftertitleunit=\skip73
+\beforetitleunit=\skip75
+\aftertitleunit=\skip76
 \ttl@plus=\dimen263
 \ttl@minus=\dimen264
-\ttl@toksa=\toks37
+\ttl@toksa=\toks42
 \titlewidth=\dimen265
 \titlewidthlast=\dimen266
 \titlewidthfirst=\dimen267
 ))
-(/usr/local/texlive/2025/texmf-dist/tex/latex/units/nicefrac.sty
-Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip74
-\L@UnitsRaiseTextstyle=\skip75
-\L@UnitsRaiseScriptstyle=\skip76
-LaTeX Info: Redefining \nicefrac on input line 131.
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/slashed.sty
-Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/xargs/xargs.sty
-Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks38
-\XKV@tempa@toks=\toks39
-\XKV@tempb@toks=\toks40
-)
-\XKV@depth=\count352
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-\xargs@max=\count353
-\xargs@toksa=\toks41
-\xargs@toksb=\toks42
-)
-(./macros.sty)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -3327,16 +3326,16 @@ Package rerunfilecheck Info: File `MAIN.brf' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 56822 strings out of 476081
+ 56838 strings out of 476081
  125240,2373549 words of node,token memory allocated
  2127 words of node memory still in use:
    51 hlist, 11 vlist, 8 rule, 1 local_par, 4 math, 31 glue, 18 kern, 2 penalty,
  1 margin_kern, 40 glyph, 171 attribute, 76 glue_spec, 36 attribute_list, 2 writ
 e nodes
    avail lists: 1:2,2:2154,3:188,4:87,5:235,6:84,7:2308,8:27,9:667,10:16,11:134
- 77796 multiletter control sequences out of 65536+600000
- 84 fonts using 39986295 bytes
- 143i,20n,130p,1000b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77812 multiletter control sequences out of 65536+600000
+ 84 fonts using 39985623 bytes
+ 143i,20n,133p,1000b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
 th.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/libertinus-font
 s/LibertinusMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/

@@ -1,40 +1,62 @@
-%----------------Choix de polices---------------
+%------------------Math Setup-------------------
 
-%---EB Garamond (ATTENTION (LUA/Xe)LaTeX)
-\usepackage{fontspec}
+%%% Packages
+
+\usepackage{amsmath}        % math environments
+\usepackage{mathtools}      % tools for math formating
+\usepackage[nice]{nicefrac} % nicer fractions
+\usepackage{cancel}         % allows to scratch expressions.
+\usepackage{slashed}        % allows to slash individual characters.
+\usepackage{xargs}          % better handling of optional arguments for commands
+\usepackage{braket}         % convenient Dirac notation
+
+%%% Custom macros
+
+\usepackage{macros} % custom latex macros (macros.sty)
+
+%------------Fonts (Body and math)--------------
+
+%%% Main font (EB Garamond)
+
+\usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
 \setmainfont{EB Garamond}[
-  Ligatures   = TeX,
-  OpticalSize = On,
-  % Numbers     = OldStyle,
-  SmallCapsFeatures = {LetterSpace=5}
+  Ligatures   = TeX, % ligatures
+  OpticalSize = On, % optical weight adjustment
+  % Numbers     = OldStyle, % can be a little hard to read
+  SmallCapsFeatures = {LetterSpace=5} % Adds spaces for small caps
 ]
 
-% Doit être importé avant unicode math
-\usepackage{amsmath}        % ajoute des environnements mathématiques
-\usepackage{mathtools} % Tools for math formating.
+%%% Math font (Libertinus Math)
 
-% Police mathématique
-\usepackage{unicode-math}
-\setmathfont{Libertinus Math}[Scale=MatchLowercase]
-% \setmathfont[range=\mathscr, Scale=MatchLowercase]{XITS Math}
-\setmathfont[range=\mathcal, Scale=MatchLowercase]{Latin Modern Math}
+\usepackage{unicode-math} % Finer math font selection
+\setmathfont{Libertinus Math}[ % Nice neutral universal math font
+Scale=MatchLowercase
+]
+\setmathfont[ % Adding back a familiar mathcal
+range = \mathcal,
+Scale = MatchLowercase
+]{Latin Modern Math}
 
-% \usepackage{bm}				% ajoute des caractères grecs en gras
-\usepackage{setspace} 		% gère l'interligne
-\usepackage[french]{babel}  % comment this line if the thesis is in English
-\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}}
-\usepackage{cite}
-\usepackage{microtype}
-\usepackage{graphicx}		% gère l'insertion des figures
-\usepackage{subfig}			% permet d'ajouter des sous-figures
-\usepackage{geometry}		% gère les dimensions du document (mise en page)
-\usepackage{fancybox}		% définit des macros pour des boîtes, des cadres, etc.
-\usepackage{url}            % permet de typographier des url
-\usepackage{float}
-\usepackage{braket}
+%-----------------Misc packages-----------------
 
-% modifie la manière dont les descriptions de tableaux et figures sont disposées
-\usepackage[format=hang,margin=5mm,font=small,labelfont=bf,labelsep=space]{caption}
+\usepackage[french]{babel} % language support
+\usepackage{setspace} % line spacing
+\usepackage{cite} % in text citations
+\usepackage{microtype} % small typography tweaks
+\usepackage{graphicx}		% figure insertion
+\usepackage{subfig}			% allows for subfigures
+\usepackage{geometry}		% document geometry
+\usepackage{fancybox}		% boxes, frames etc
+\usepackage{url}            % typographically sound URLs
+\usepackage{float} % Fixes hacky geometry problems
+\usepackage[
+format    = hang,
+margin    = 5mm,
+font      = small,
+labelfont = bf,
+labelsep  = space
+]{caption} % tweak caption layout and format
+\newcommand\itsym{$\bullet$} % symbole pour les listes
 
 %-------------------------------------------------------------------------------
 % Pass hyperref options before loading pdfx
@@ -70,20 +92,11 @@
 \newcolumntype{R}{>{$\displaystyle}r<{$}} % colonne mathématique alignée à droite
 \renewcommand{\arraystretch}{1.5}
 \usepackage{dcolumn} % permet l'alignement sur le point décimal
+\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}}
 
-%-------------------------------------------------------------------------------
-% Mise en page
+%---------------General layout------------------
+
 \usepackage{theme/layout}
-%-------------------------------------------------------------------------------
-% Macros
-
-\usepackage[nice]{nicefrac} % Nicer fractions
-\usepackage{cancel} % Allows to scratch expressions.
-\usepackage{slashed} % Allows to slash individual characters.
-\usepackage{xargs} % Better handling of optional arguments for commands
-\usepackage{macros} % Mes macros LaTeX spécifiques
-
-\newcommand\itsym{$\bullet$} % symbole pour les listes
 
 %-------------------------------------------------------------------------------
 % Figures TiKz !!!TODO FIX THIS!!!
