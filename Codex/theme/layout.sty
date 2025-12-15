@@ -12,25 +12,26 @@
 \newcommand\chapterstring{Chapitre}
 \usepackage{titlesec}
 
+%%% Chapters
 
-% chapitres
 %\titleformat{\chapter}[display] {\bfseries\sffamily\color{RedViolet}} {\filright
 \titleformat{\chapter}[display] {\bfseries\color{MainColor}} {\filright
 \enspace \Large \chapterstring~\thechapter} {14pt} {\Huge\filcenter}
 
-% sections
-\titleformat{\section}{\vspace{0mm plus 2cm}\addpenalty{-1000}\color{MainColor}\Large\bfseries}{\thesection}{1em}{}
-[{\color{HighlightColor}\titlerule[0.5pt]}]
+%%% Sections
 
-% sous-sections
+\titleformat{\section}{\vspace{0mm plus 2cm}\addpenalty{-1000}\color{MainColor}\Large\bfseries}{\thesection}{1em}{}
+[{\color{HighlightColor}\titlerule[1.5pt]}]
+
+%%% Subsections
 \titleformat{\subsection}{\addpenalty{-500}\large\bfseries}{\thesubsection}{1em}{}
 
-% sous-sous-sections
+%%% Subsubsections
 \titleformat{\subsubsection}{\penalty-500\vspace{0pt plus 2pt}{}\bfseries}{\thesubsubsection}{}{}[\vspace{-14pt}]
 
 
-%-----------------------------------------------------------------------------
-% formattage général
-\geometry{letterpaper,lmargin=1in,rmargin=1in,tmargin=1.25in,bmargin=1.0in}
-\setlength{\parindent}{4ex} 	% indentation au début de chaque paragraphe
-\setlength{\parskip}{2ex plus 0.5ex minus 0.2ex} % espace vertical entre paragraphes
+%--------------Formattage Général---------------
+
+\geometry{letterpaper,lmargin=1in,rmargin=1in,tmargin=1.25in,bmargin=1.0in} % margins and page layout
+\setlength{\parindent}{4ex} 	% paragraph indentation
+\setlength{\parskip}{2ex plus 0.5ex minus 0.2ex} % vertical space between paragraphs
