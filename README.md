@@ -28,3 +28,4 @@ Consult `LICENSE.md`
 - Make sure macros are compatible with new math font
 - Adapt dagger symbol to be less ugly
 - Clean up comments and structure
+- Organize and partition `MAIN.tex`
