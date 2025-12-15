@@ -7,7 +7,7 @@ Ahh et aussi,
 }
 Et pour un vecteur maintenant:
 \al{
-\symbf{a}\cdot\symbf{b}
+\symbf{a}\cdot\symbf{b}\label{eq:dot_product}
 }
 $\mathcal{R}\mathscr{R}\mathfrak{R}\mathbb{R}\mathbb{C}f$
 
@@ -16,3 +16,31 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 The quick brown fox jumps over the lazy dog.
+
+BTW, this is just the dot product \eqref{eq:dot_product}. This is a woodcock \ref{fig:Estoopi_bird}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/American_woodcock.jpg}
+	\caption{Une bécasse d'Amérique. Un \enquote*{\emph{stoopi-bird}} certifié. En Français, on dit un \enquote{\emph{Oisot}}}
+	\label{fig:Estoopi_bird}
+\end{figure}
+
+This is nabla $\nabla$. Now this is $\symbf{\nabla}$. How about $\beta$? And now $\symbf{\beta}$... scary!
+
+Now, let $\ve{v}\in\mathbb{R}$
+
+The Wilson loop operator reads as:
+\al{
+    \boxed{
+        \op{W} = \mathcal{T}\Exp{-\oint\D\op{A}}
+    }
+}
+where a creation or annihilation operator would look like $\op{c}_\alpha$ or $\op{c}^\dag_\beta$. Here is just a dagger ($\dagger$) and a double dagger ($\ddagger$). Hence, a general hamiltonian will look like:
+\al{
+    \op{H} = \sum_{\mu\nu}t_{\mu\nu}\op{c}_\mu^\dagger\op{c}_\nu + \sum_{\alpha\beta\mu\nu}V_{\alpha\beta\mu\nu}\op{c}^\dagger_\alpha\op{c}^\dagger_\beta\op{c}_\mu\op{c}_\nu
+}
+At equilibrium we say that:
+\al{
+    \op{\rho} = \Exp{-\beta\p{\op{H} - \mu\op{N}}}
+}

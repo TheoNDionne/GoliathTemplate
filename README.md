@@ -24,9 +24,8 @@ Consult `LICENSE.md`
 
 ### *Todo*
 - Write the contents and structure
-- Make sure macros are compatible with new math font
-- Adapt dagger symbol to be less ugly
 - Clean up comments and structure
 - Organize and partition `MAIN.tex`
 - Make a .latexmkrc
-- Make section line ever so slightly heavier
+- Make boxed equation match section line weight and color (rip off TeX-JAM)
+- Explore definition boxes?

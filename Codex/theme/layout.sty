@@ -1,16 +1,14 @@
-
-% Entêtes et pieds
+%--------------Headers and Footers--------------
 
 \usepackage[plainheadsepline,markcase=ignoreuppercase]{scrlayer-scrpage}
 \usepackage{typearea}
 \pagestyle{scrheadings}
 \renewcommand{\chaptermark}[1]{\markboth{{\thechapter. #1}}{}}
 \renewcommand{\sectionmark}[1]{}
-
-% Format de titres de chapitres, sections et sous-sections
-
 \newcommand\chapterstring{Chapitre}
 \usepackage{titlesec}
+
+%------------Chapters and Sections--------------
 
 %%% Chapters
 
@@ -29,8 +27,7 @@
 %%% Subsubsections
 \titleformat{\subsubsection}{\penalty-500\vspace{0pt plus 2pt}{}\bfseries}{\thesubsubsection}{}{}[\vspace{-14pt}]
 
-
-%--------------Formattage Général---------------
+%--------------General Page Layout--------------
 
 \geometry{letterpaper,lmargin=1in,rmargin=1in,tmargin=1.25in,bmargin=1.0in} % margins and page layout
 \setlength{\parindent}{4ex} 	% paragraph indentation

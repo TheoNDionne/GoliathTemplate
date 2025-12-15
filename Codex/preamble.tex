@@ -30,11 +30,11 @@
 
 \usepackage{unicode-math} % Finer math font selection
 \setmathfont{Libertinus Math}[ % Nice neutral universal math font
-Scale=MatchLowercase
+    Scale=MatchLowercase
 ]
 \setmathfont[ % Adding back a familiar mathcal
-range = \mathcal,
-Scale = MatchLowercase
+    range = {\mathcal, \dagger, \ddagger},
+    Scale = MatchLowercase
 ]{Latin Modern Math}
 
 %-----------------Misc packages-----------------
@@ -56,9 +56,11 @@ font      = small,
 labelfont = bf,
 labelsep  = space
 ]{caption} % tweak caption layout and format
+\usepackage{csquotes} % For quotes
 \newcommand\itsym{$\bullet$} % symbole pour les listes
 
-%-------------------------------------------------------------------------------
+%-------------Colors and Hyperref---------------
+
 % Pass hyperref options before loading pdfx
 \PassOptionsToPackage{
     backref=page,
@@ -68,31 +70,31 @@ labelsep  = space
     pdfa
 }{hyperref}
 
-\usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
-
-% \usepackage{theme/colors_vert_et_or}
-\usepackage{theme/colors_crimson}
+\usepackage[a-2b,mathxmp]{pdfx}[2018/12/22] % ???
 
 % options PDF
 \hypersetup{
     colorlinks=true,         % colorise les liens
     breaklinks=true,         % permet le retour la ligne dans les liens trop longs
-    urlcolor=URLColor,   % couleur des hyperliens (doit inclure x11names dans xcolor ci-dessus)
-    linkcolor=LinkColor,  % couleur des liens internes
-    citecolor=CiteColor,  % couleur des liens de citation
+    urlcolor=URLColor,       % couleur des hyperliens (doit inclure x11names dans xcolor ci-dessus)
+    linkcolor=LinkColor,     % couleur des liens internes
+    citecolor=CiteColor,     % couleur des liens de citation
     bookmarksopen=true,      % ouvre les signets PDF au départ
 }
 
+%%% Choose color theme
 
-%-----------------------------------------------------------------------------
-% Tableaux
-\usepackage{array} % généralise certaines fonctions de tabulation
-\newcolumntype{C}{>{$\displaystyle}c<{$}} % colonne mathématique centrée
-\newcolumntype{L}{>{$\displaystyle}l<{$}} % colonne mathématique alignée à gauche
-\newcolumntype{R}{>{$\displaystyle}r<{$}} % colonne mathématique alignée à droite
-\renewcommand{\arraystretch}{1.5}
-\usepackage{dcolumn} % permet l'alignement sur le point décimal
-\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}}
+\usepackage{colorthemes/colors_marine} % choose a style
+
+%--------------------Tables---------------------
+
+\usepackage{array} % tabular functions
+\newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
+\newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
+\newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
+\renewcommand{\arraystretch}{1.5} % vertical spacing of tables
+\usepackage{dcolumn} % allows for aligning of values wrt to the decimal
+\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
 
 %---------------General layout------------------
 

@@ -1,19 +1,12 @@
-
-
 Dans sa forme la plus générale, le hamiltonien du modèle prend la forme suivante dans le contexte de la seconde quantification:
 \begin{align}
     \mathrm{H} = \sum_{ij,\sigma} t_{ij}\mathrm{c}_{i\sigma}^\dagger\mathrm{c}_{j\sigma}+U\sum_i\mathrm{n}_{i\uparrow}\mathrm{n}_{i\downarrow}.\label{eq:hamiltonien_hubbard_1_bande}
 \end{align}
 Les opérateurs $\mathrm c^{(\dagger)}_{i\sigma}$ sont les opérateurs annihilation (création) fermioniques d'un électron sur le site $i$ de spin $\sigma$.
 Ces derniers peuvent être exprimés dans la base réciproque via les transformée de Fourier:
-\begin{align}
-    \begin{split}
-        \mathrm{c}^\dag_{i\sigma} = \frac{1}{\sqrt{N}}\sum_\ve{k}\Exp{-i\ve{k}\cdot\ve{r}_i}\mathrm{c}^\dag_{\ve{k}\sigma}
-    \end{split}
-    \begin{split}
-        \mathrm{c}_{i\sigma} = \frac{1}{\sqrt{N}}\sum_\ve{k}\Exp{i\ve{k}\cdot\ve{r}_i}\mathrm{c}_{\ve{k}\sigma}
-    \end{split}\label{eq:op_creat_anni_fourier}
-\end{align}
+% \begin{aligned}
+%         \mathrm{c}^\dag_{i\sigma} &= \frac{1}{\sqrt{N}}\sum_\ve{k}\Exp{-i\ve{k}\cdot\ve{r}_i}\mathrm{c}^\dag_{\ve{k}\sigma} & \mathrm{c}_{i\sigma} &= \frac{1}{\sqrt{N}}\sum_\ve{k}\Exp{i\ve{k}\cdot\ve{r}_i}\mathrm{c}_{\ve{k}\sigma}\label{eq:op_creat_anni_fourier}
+% \end{aligned}
 
 \begin{figure}
     \centering
