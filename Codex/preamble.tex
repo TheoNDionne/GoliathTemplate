@@ -40,6 +40,27 @@
 %-----------------Misc packages-----------------
 
 \usepackage[french]{babel} % language support
+
+%%% French specific names
+\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
+
+% Names for theorem box type environments
+\addto\captionsfrench{\def\theoremname{Théorème}}
+\addto\captionsenglish{\def\theoremname{Theorem}}
+
+\addto\captionsfrench{\def\definitionname{Définition}}
+\addto\captionsenglish{\def\definitionname{Definition}}
+
+\addto\captionsfrench{\def\corollaryname{Corollaire}}
+\addto\captionsenglish{\def\corollaryname{Corollary}}
+
+\addto\captionsfrench{\def\examplename{Exemple}}
+\addto\captionsenglish{\def\examplename{Example}}
+
+\addto\captionsfrench{\def\lemmaname{Lemme}}
+\addto\captionsenglish{\def\lemmaname{Lemma}}
+
+
 \usepackage{setspace} % line spacing
 \usepackage{cite} % in text citations
 \usepackage{microtype} % small typography tweaks
@@ -67,7 +88,6 @@ labelsep  = space
 \newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
 \renewcommand{\arraystretch}{1.5} % vertical spacing of tables
 \usepackage{dcolumn} % allows for aligning of values wrt to the decimal
-\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
 
 %---------------General layout------------------
 
@@ -106,22 +126,57 @@ labelsep  = space
 \setlength{\fboxrule}{1pt} % sets the border width globally (or locally in a group)
 \setlength{\fboxsep}{4pt}  % sets padding between frame and content
 
-% \usepackage{tcolorbox}
-% \tcbuselibrary{theorems}
-% \tcbset{%
-%     highlight math style={
-%         colframe=MainColor, % MainColor defined in colorthemes
-%         colback=white,
-%         arc=4pt,
-%         boxrule=1pt,
-%         sharp corners
-%     }
-% }
+% Robust color boxes that can be used even within aligns
+\makeatletter
+\newcommand{\cboxed}[1]{%
+  \mathchoice
+    {\fcolorbox{MainColor}{MainColor!5}{$\displaystyle #1$}}
+    {\fcolorbox{MainColor}{MainColor!5}{$\textstyle #1$}}
+    {\fcolorbox{MainColor}{MainColor!5}{$\scriptstyle #1$}}
+    {\fcolorbox{MainColor}{MainColor!5}{$\scriptscriptstyle #1$}}%
+}
+\makeatother
 
-% % Use a colored box for 'cboxed'
+%------------------------------------------------BOXES
+\usepackage[most]{tcolorbox}
 
-% \newcommand{\cboxed}[1]{\tcbhighmath{#1}}
+%-------------------------------
+% Define a reusable box style
+%-------------------------------
+\tcbset{
+mytheoremstyle/.style={
+    fonttitle=\bfseries\upshape, % bold upright title
+    fontupper=\upshape, % upright body font
+    arc=0mm, % sharpish corner
+    colback=MainColor!5, % color of the background
+    colframe=MainColor, % color of the frame
+    width=\linewidth, % width of the box
+    boxrule=0.5mm,
+    top=1mm,
+    bottom=1mm,
+    left=2mm,
+    right=2mm,
+    enhanced
+}
+}
 
+%-------------------------------
+% Define all your theorem-like boxes using this style
+%-------------------------------
+\newtcbtheorem[auto counter,number within=chapter]{theorembox}%
+    {\theoremname}{mytheoremstyle}{theorem}
+
+\newtcbtheorem[auto counter,number within=chapter]{definitionbox}%
+    {\definitionname}{mytheoremstyle}{definition}
+
+\newtcbtheorem[auto counter,number within=chapter]{corollarybox}%
+    {\corollaryname}{mytheoremstyle}{corollary}
+
+\newtcbtheorem[auto counter,number within=chapter]{examplebox}%
+    {\examplename}{mytheoremstyle}{example}
+
+\newtcbtheorem[auto counter,number within=chapter]{lemmabox}%
+    {\lemmaname}{mytheoremstyle}{lemma}
 
 %-------------------------------------------------------------------------------
 % Figures TiKz !!!TODO FIX THIS!!!
@@ -142,7 +197,7 @@ labelsep  = space
     shapes.geometric,
     arrows
 }
-\tikzexternalize[prefix=figures/pdf/]
+% \tikzexternalize[prefix=figures/pdf/]
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
