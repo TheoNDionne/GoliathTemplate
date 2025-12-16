@@ -112,17 +112,14 @@
 
 %%% Colored boxes
 
-\setlength{\fboxrule}{1pt} % sets the border width globally (or locally in a group)
-\setlength{\fboxsep}{4pt}  % sets padding between frame and content
-
 % Robust color boxes that can be used even within aligns
 \makeatletter
 \newcommand{\cboxed}[1]{%
   \mathchoice
-    {\fcolorbox{MainColor}{MainColor!5}{$\displaystyle #1$}}
-    {\fcolorbox{MainColor}{MainColor!5}{$\textstyle #1$}}
-    {\fcolorbox{MainColor}{MainColor!5}{$\scriptstyle #1$}}
-    {\fcolorbox{MainColor}{MainColor!5}{$\scriptscriptstyle #1$}}%
+    {\fcolorbox{MainColor}{MainColor!2}{$\displaystyle #1$}}
+    {\fcolorbox{MainColor}{MainColor!2}{$\textstyle #1$}}
+    {\fcolorbox{MainColor}{MainColor!2}{$\scriptstyle #1$}}
+    {\fcolorbox{MainColor}{MainColor!2}{$\scriptscriptstyle #1$}}%
 }
 \makeatother
 
@@ -135,7 +132,7 @@ mytheoremstyle/.style={
     fonttitle=\bfseries\upshape, % bold upright title
     fontupper=\upshape, % upright body font
     arc=0mm, % sharpish corner
-    colback=MainColor!5, % color of the background
+    colback=MainColor!2, % color of the background
     colframe=MainColor, % color of the frame
     width=\linewidth, % width of the box
     boxrule=0.5mm,

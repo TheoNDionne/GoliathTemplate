@@ -1,96 +1,35 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %----------------Language Support---------------
+\usepackage[french]{babel} % language support priority language last
 
-\usepackage[french]{babel} % priority language last
-
-%%% French
+%%% French renamings
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
 
 %--------------------Colors---------------------
-
-\usepackage[x11names]{xcolor}
+\usepackage[x11names]{xcolor} % adds in typical color features
 
 %%% Choose color theme
-
 \usepackage{CodexStyle/colorthemes/colors_marine} % choose a style
 
-%------------------Math Setup-------------------
-
-%%% Packages
-
-\usepackage{amsmath}        % math environments
-\usepackage{mathtools}      % tools for math formating
-\usepackage[nice]{nicefrac} % nicer fractions
-\usepackage{cancel}         % allows to scratch expressions.
-\usepackage{slashed}        % allows to slash individual characters.
-\usepackage{xargs}          % better handling of optional arguments for commands
-\usepackage{braket}         % convenient Dirac notation
-
-% Boxe packages
-\usepackage{empheq}
-\usepackage[most]{tcolorbox}
-
-%%% Custom macros
-
-\usepackage{CodexStyle/math_macros} % custom latex macros (macros.sty)
-
-%------------Fonts (Body and math)--------------
-
-%%% Main font (EB Garamond)
-
-\usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
-\setmainfont{EB Garamond}[
-  Ligatures   = TeX, % ligatures
-  OpticalSize = On, % optical weight adjustment
-  % Numbers     = OldStyle, % can be a little hard to read
-  SmallCapsFeatures = {LetterSpace=5} % Adds spaces for small caps
-]
-
-%%% Math font (Libertinus Math)
-
-\usepackage{unicode-math} % Finer math font selection
-\setmathfont{Libertinus Math}[ % Nice neutral universal math font
-    Scale=MatchLowercase
-]
-\setmathfont[ % Adding back a familiar mathcal
-    range = {\mathcal, \dagger, \ddagger},
-    Scale = MatchLowercase
-]{Latin Modern Math}
-
-%-----------------Misc packages-----------------
-
-\usepackage{setspace} % line spacing
-\usepackage{cite} % in text citations
-\usepackage{microtype} % small typography tweaks
-\usepackage{graphicx}		% figure insertion
-\usepackage{subfig}			% allows for subfigures MIGRATE TO A MODERN PACKAGE MAYBE
-\usepackage{geometry}		% document geometry
-\usepackage{fancybox}		% boxes, frames etc
-\usepackage{url}            % typographically sound URLs
-\usepackage{float}          % Fixes hacky geometry problems
+%---------------General packages----------------
+\usepackage{setspace}        % line spacing
+\usepackage{cite}            % in text citations
+\usepackage{microtype}       % small typography tweaks
+\usepackage{graphicx}		 % figure insertion
+\usepackage{subfig}			 % allows for subfigures MIGRATE TO A MODERN PACKAGE MAYBE
+\usepackage{geometry}		 % document geometry
+\usepackage{fancybox}		 % boxes, frames etc
+\usepackage{url}             % typographically sound URLs
+\usepackage{float}           % Fixes hacky geometry problems
 \usepackage[
 format    = hang,
 margin    = 5mm,
 font      = small,
 labelfont = bf,
 labelsep  = space
-]{caption} % tweak caption layout and format
-\usepackage{csquotes} % For quotes
-\newcommand\itsym{$\bullet$} % symbole pour les listes
-
-%--------------------Tables---------------------
-
-\usepackage{array} % tabular functions
-\newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
-\newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
-\newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
-\renewcommand{\arraystretch}{1.5} % vertical spacing of tables
-\usepackage{dcolumn} % allows for aligning of values wrt to the decimal
-
-%---------------General layout------------------
-
-\usepackage{CodexStyle/theme/layout}
-
-%-------------Colors and Hyperref---------------
+]{caption}                   % tweak caption layout and format
+\usepackage{csquotes}        % For quotes
+% \newcommand\itsym{$\bullet$} % symbole pour les listes
 
 \usepackage{hyperref}
 % Pass hyperref options before loading pdfx
@@ -102,8 +41,9 @@ labelsep  = space
     pdfa
 }{hyperref}
 
-
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 % \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22] % ???
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 % options PDF
 \hypersetup{
@@ -115,6 +55,53 @@ labelsep  = space
     bookmarksopen=true,      % ouvre les signets PDF au départ
 }
 
+%---------------CodexStyle layout---------------
+\usepackage{CodexStyle/theme/layout} % TODO this is where there should be a switch when it comes to long/short (watch out for boxes)
+
+%------------------Math Setup-------------------
+\usepackage{amsmath}          % math environments
+\usepackage{mathtools}        % tools for math formating
+\usepackage[nice]{nicefrac}   % nicer fractions
+\usepackage{cancel}           % allows to scratch expressions.
+\usepackage{slashed}          % allows to slash individual characters.
+\usepackage{xargs}            % better handling of optional arguments for commands
+\usepackage{braket}           % convenient Dirac notation
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}  % adds colorful box environments
+
+%%% Import custom math macros
+\usepackage{CodexStyle/math_macros} % custom latex macros (macros.sty)
+
+%------------Fonts (Body and math)--------------
+\usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
+\usepackage{unicode-math} % Finer math font selection
+
+%%% Main font (EB Garamond)
+\setmainfont{EB Garamond}[
+  Ligatures   = TeX, % ligatures
+  OpticalSize = On, % optical weight adjustment
+  % Numbers     = OldStyle, % can be a little hard to read
+  SmallCapsFeatures = {LetterSpace=5} % Adds spaces for small caps
+]
+
+%%% Math fonts (Libertinus and Latin Modern)
+\setmathfont{Libertinus Math}[ % nice neutral universal math font
+    Scale=MatchLowercase % set scale
+]
+\setmathfont{Latin Modern Math}[ % switching up some symbols
+    range = {\mathcal, \dagger, \ddagger}, % getting back mathcal and less dramatic daggers
+    Scale = MatchLowercase % set scale
+]
+
+%--------------------Tables---------------------
+\usepackage{array} % tabular functions
+\usepackage{dcolumn} % allows for aligning of values wrt to the decimal
+\newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
+\newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
+\newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
+\renewcommand{\arraystretch}{1.5} % vertical spacing of tables
+
+%%% UNDER CONSTRUCTION %%%
 %-------------------------------------------------------------------------------
 % Figures TiKz !!!TODO FIX THIS!!!
 \usepackage{tikz}
@@ -143,4 +130,4 @@ labelsep  = space
 \pgfsetlayers{background,main,foreground}
 
 \usepackage{CodexStyle/theme/tikzstyles}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
