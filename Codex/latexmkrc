@@ -2,9 +2,6 @@
 # latexmkrc #
 # --------- #
 
-# Directory for auxiliary files (log, aux, toc, etc.)
-$aux_dir = 'buildfiles';
-
 # Build
 $aux_dir_for_pdf = 0;        # directory for pdf
 $pdf_mode = 4;               # build PDF
@@ -13,6 +10,3 @@ $lualatex = 'lualatex -interaction=nonstopmode -synctex=1 %O %S';
 
 # Default main file
 $main_file = 'MAIN.tex';
-
-# Recommended cleanup command
-$clean_ext = 'aux,log,out,toc,lof,lot,fls,fdb_latexmk,synctex.gz';  # files to remove with -c

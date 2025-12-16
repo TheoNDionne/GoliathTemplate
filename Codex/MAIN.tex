@@ -12,7 +12,20 @@
 %%% Insert date here
 
 \def\DATE{\color{red}DATE DU DEPOT FINAL\color{black}}
+
 \input{CodexStyle/preamble.tex}
+
+%!%!%!%!%!%!%!%
+% \usepackage[
+%   backend=biber,
+%   style=nature,
+%   sorting=none,
+%   backref=true
+% ]{biblatex}
+
+
+% \addbibresource{These.bib}   % your .bib file
+%!%!%!%!%!%!%!%!%!%!
 
 \begin{document}
 
@@ -54,7 +67,7 @@ Département de physique\\[8mm plus 5mm]
 \newpage
 \vglue 5cm
 \begin{flushright}
-À mon idole, GTools et SuperDavi
+À mon idole, GTools.
 \end{flushright}
 
 
@@ -83,6 +96,7 @@ Département de physique\\[8mm plus 5mm]
 \listoffigures
 }
 
+% TODO EXPAND ON THIS, VERY CRISPY
 % facultatif: liste des notations (abbréviations) utilisées
 % \addcontentsline{toc}{chapter}{Notations}\chapter*{Notations}
 % \markboth{Notations}{}
@@ -99,9 +113,8 @@ Département de physique\\[8mm plus 5mm]
 % corps du document
 \mainmatter
 
-
 % facultatif: introduction non numérotée
-\addcontentsline{toc}{chapter}{Introduction}
+\addcontentsline{toc}{chapter}{Introduction} % Add in the intro to the TOC
 \chapter*{Introduction}
 \markboth{Introduction}{Introduction}
 \input{sections/debut/introduction}
@@ -128,13 +141,18 @@ Département de physique\\[8mm plus 5mm]
 %-------------------------------------------------------------------------------
 % bibliographie
 
+% TODO: SWAP THIS FOR SOMETHING MODERN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
 \nocite{*} % Shows all references regardless of if cited
 \bibliographystyle{CodexStyle/bibstyles/nature-fr} % Use "nature" for english version
 \addcontentsline{toc}{chapter}{Bibliographie} % Add bibliography
 \bibliography{These}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
+% SO LONG SPACE COWBOY...
+% \singlespacing
+% \nocite{*}
+% \printbibliography
 
 \end{document}

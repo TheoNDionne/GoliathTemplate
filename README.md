@@ -13,6 +13,8 @@ In summary, my main contributions are:
 
 ## Basic usage
 
+Copy the `Codex` repository that actually contains the template and you should be good to go! A couple basic commands are given below.
+
 #### **Compilation**
 
 Go to `./Codex/` and run `latexmk`. Compilation should automatically proceed by reading the `latexmkrc` file.
@@ -29,12 +31,21 @@ Still in `./Codex/`, run `latexmk -c` and the cleanup should also proceed automa
 
 Consult `LICENSE.md`
 
-### *Todo*
+## *Todo*
 - Write the contents and structure
 - Clean up comments and structure of preamble chain
 - Organize and partition `MAIN.tex`
+
+
+#### *Priority*
+
 - Rethink the structure of the preambles for the least possible brain fuckery.
 - Move the colored boxes into the math_macros section.
 - Make a dedicated language section where Babel is imported and things happen [must be before the macros then.]
+
+#### *Backburner*
+
 - Figure out how to do bibliographies in a modern way...
 - Figure out what I want to do for tikz and pgfplots.
+- Update subcaption.
+- Add back in pdfx as a tourdeforce
