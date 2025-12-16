@@ -27,6 +27,4 @@ Consult `LICENSE.md`
 - Clean up comments and structure
 - Organize and partition `MAIN.tex`
 - Make a .latexmkrc
-- Make boxed equation
-- Make theorem / [definition] environment
 - Explore definition boxes?
