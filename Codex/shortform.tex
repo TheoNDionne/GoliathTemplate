@@ -1,0 +1,161 @@
+%================================================================================================%
+% Codex shortform document template for LuaLaTeX, provided by T.N. Dionne                        %
+% Forked from a template initiated by Prof. D. Sénéchal (2013) and modified by J. Leblanc (2025) %
+% This template is offered free of warranty and may be freely modified                           %
+%================================================================================================%
+
+%%% Choose between electronic and print versions
+\documentclass[titlepage,oneside,letterpaper,11pt]{book} % electronic %NEEEEDS TO BE MODIFIED EVENTUALLY
+%\documentclass[titlepage,twoside,letterpaper,openright,12pt]{book} % print
+
+%%% Insert date here
+\def\DATE{\color{red}DATE DU DEPOT FINAL\color{black}}
+
+\input{CodexStyle/preamble.tex}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% Coverpage
+\input{sections/debut/page_titre.tex}
+\frontmatter
+%-------------------------------------------------------------------------------
+% page de composition du jury
+% modifier/commenter au besoin
+
+% \newpage
+% \thispagestyle{empty}
+% \begin{center}
+% \vglue 1cm
+% Le \DATE \\[1cm]
+% {\it le jury a accepté le mémoire de Monsieur Hubbard dans sa version finale.}\\[1cm]
+% Membres du jury\\[1cm]
+
+% Professeur Dirac\\
+% Directeur de recherche\\
+% Département de physique\\[8mm plus 5mm]
+
+% Professeur Plank\\
+% Membre interne\\
+% Département de physique\\[8mm plus 5mm]
+
+% Professeur Pauli\\
+% Président rapporteur\\
+% Département de physique\\[8mm plus 5mm]
+
+
+% \end{center}
+
+
+%-------------------------------------------------------------------------------
+% Page de dédicace
+
+% \newpage
+% \vglue 5cm
+% \begin{flushright}
+% À mon idole, GTools.
+% \end{flushright}
+
+
+%-------------------------------------------------------------------------------
+% Sommaire
+% \newpage
+% \onehalfspacing
+% \addcontentsline{toc}{chapter}{Sommaire}\chapter*{Sommaire}
+% \input{sections/debut/sommaire}
+
+%-------------------------------------------------------------------------------
+% remerciements
+
+% \chapter{Remerciements}
+
+% \markboth{Remerciements}{Remerciements}
+% \input{sections/debut/remerciements}
+
+%-------------------------------------------------------------------------------
+% tables des matières, des tableaux et des figures, etc.
+
+% toggle this as you need
+{
+\setlength{\parskip}{0ex}
+\tableofcontents
+% \listoftables
+% \listoffigures
+}
+
+% TODO EXPAND ON THIS, VERY CRISPY
+% facultatif: liste des notations (abbréviations) utilisées
+% \addcontentsline{toc}{chapter}{Notations}\chapter*{Notations}
+% \markboth{Notations}{}
+% \input{notation.tex}
+
+%-------------------------------------------------------------------------------
+% publications
+
+% \chapter{Publications}
+% \markboth{Publications}{Publications}
+% \input{sections/debut/publications}
+
+%-------------------------------------------------------------------------------
+% corps du document
+\mainmatter
+
+\section{A placeholder section}
+
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+\subsection{A placeholder subsection}
+
+The general public has decided that this is the most noteworthy equation in all of physics
+\al{
+    \cboxed{
+        E = mc^2
+    }.
+}
+
+\subsubsection{A short remark on the abover remark}
+
+
+% facultatif: introduction non numérotée
+% \addcontentsline{toc}{chapter}{Introduction} % Add in the intro to the TOC
+% \chapter*{Introduction}
+% \markboth{Introduction}{Introduction}
+% \input{sections/debut/introduction}
+
+% \part{Une partie}
+% \input{sections/theorie/theorie.tex}
+% \input{sections/methode/methode.tex}
+
+
+%-------------------------------------------------------------------------------
+% conclusion
+
+% \addcontentsline{toc}{chapter}{Conclusion}\chapter*{Conclusion}
+% \markboth{Conclusion}{Conclusion}
+% \input{sections/fin/conclusion}
+
+
+%-------------------------------------------------------------------------------
+% annexes
+%\appendix
+%\renewcommand\chapterstring{Annexe}
+% \input{sections/fin/annexe}
+
+%-------------------------------------------------------------------------------
+% bibliographie
+
+% TODO: SWAP THIS FOR SOMETHING MODERN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\singlespacing
+\nocite{*} % Shows all references regardless of if cited
+\bibliographystyle{CodexStyle/bibstyles/nature-fr} % Use "nature" for english version
+\addcontentsline{toc}{chapter}{Bibliographie} % Add bibliography
+\bibliography{These}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SO LONG SPACE COWBOY...
+% \singlespacing
+% \nocite{*}
+% \printbibliography
+
+\end{document}
