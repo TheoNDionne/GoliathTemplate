@@ -59,6 +59,20 @@ labelsep  = space
 \usepackage{csquotes} % For quotes
 \newcommand\itsym{$\bullet$} % symbole pour les listes
 
+%--------------------Tables---------------------
+
+\usepackage{array} % tabular functions
+\newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
+\newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
+\newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
+\renewcommand{\arraystretch}{1.5} % vertical spacing of tables
+\usepackage{dcolumn} % allows for aligning of values wrt to the decimal
+\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
+
+%---------------General layout------------------
+
+\usepackage{theme/layout}
+
 %-------------Colors and Hyperref---------------
 
 % Pass hyperref options before loading pdfx
@@ -86,19 +100,28 @@ labelsep  = space
 
 \usepackage{colorthemes/colors_marine} % choose a style
 
-%--------------------Tables---------------------
+%%% Colored boxes
 
-\usepackage{array} % tabular functions
-\newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
-\newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
-\newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
-\renewcommand{\arraystretch}{1.5} % vertical spacing of tables
-\usepackage{dcolumn} % allows for aligning of values wrt to the decimal
-\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
+\usepackage{empheq}
+\setlength{\fboxrule}{1pt} % sets the border width globally (or locally in a group)
+\setlength{\fboxsep}{4pt}  % sets padding between frame and content
 
-%---------------General layout------------------
+% \usepackage{tcolorbox}
+% \tcbuselibrary{theorems}
+% \tcbset{%
+%     highlight math style={
+%         colframe=MainColor, % MainColor defined in colorthemes
+%         colback=white,
+%         arc=4pt,
+%         boxrule=1pt,
+%         sharp corners
+%     }
+% }
 
-\usepackage{theme/layout}
+% % Use a colored box for 'cboxed'
+
+% \newcommand{\cboxed}[1]{\tcbhighmath{#1}}
+
 
 %-------------------------------------------------------------------------------
 % Figures TiKz !!!TODO FIX THIS!!!
