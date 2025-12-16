@@ -33,6 +33,8 @@ Consult `LICENSE.md`
 - Write the contents and structure
 - Clean up comments and structure of preamble chain
 - Organize and partition `MAIN.tex`
-- Finish migrating preamble stuff to `preambles/`
 - Rethink the structure of the preambles for the least possible brain fuckery.
+- Move the colored boxes into the math_macros section.
+- Make a dedicated language section where Babel is imported and things happen [must be before the macros then.]
+- Figure out how to do bibliographies in a modern way...
 - Figure out what I want to do for tikz and pgfplots.
