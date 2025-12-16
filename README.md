@@ -52,5 +52,10 @@ Consult `LICENSE.md`
 ## ***Coming next***
 
 Currently in the experimental branch! Demon time...
+- Make the boxes follow the style... I want the least possible goofy ahh comments/uncomments in the release version
+- Merge the fixed macros into main
+- Merge the fixed fonts into main
+- Merge the fixed style for section/subsections into main
+- Merge the bibliography fix, really nice. addcaption or whatever...
 
 The short form version of this template! (once all except backburner is done)
