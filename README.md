@@ -35,3 +35,4 @@ Consult `LICENSE.md`
 - Organize and partition `MAIN.tex`
 - Finish migrating preamble stuff to `preambles/`
 - Rethink the structure of the preambles for the least possible brain fuckery.
+- Figure out what I want to do for tikz and pgfplots.
