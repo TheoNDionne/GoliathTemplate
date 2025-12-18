@@ -4,6 +4,9 @@
 
 %%% French renamings
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
+\addto\captionsfrench{%
+  \renewcommand{\refname}{Bibliographie}%
+}
 
 %--------------------Colors---------------------
 \usepackage[x11names]{xcolor} % adds in typical color features
@@ -56,7 +59,19 @@ labelsep  = space
 }
 
 %---------------CodexStyle layout---------------
-\usepackage{CodexStyle/theme/layout} % TODO this is where there should be a switch when it comes to long/short (watch out for boxes)
+% Switches between longform and shortform automatically
+\makeatletter
+\@ifclassloaded{book}{
+    \usepackage{CodexStyle/theme/layout} % load longform @@@@@@@@@@@@@@@@@@ RENAME
+}{
+\@ifclassloaded{article}{
+    \usepackage{CodexStyle/theme/shortform_layout} % load shortform
+}{
+    \PackageError{mydoc}
+        {Unsupported document class!}
+        {`book` -> longform, `article` -> shortform}
+}}
+\makeatother
 
 %------------------Math Setup-------------------
 \usepackage{amsmath}          % math environments
@@ -66,11 +81,11 @@ labelsep  = space
 \usepackage{slashed}          % allows to slash individual characters.
 \usepackage{xargs}            % better handling of optional arguments for commands
 \usepackage{braket}           % convenient Dirac notation
-\usepackage{empheq}
+\usepackage{empheq}           % colored boxes in math env
 \usepackage[most]{tcolorbox}  % adds colorful box environments
 
-%%% Import custom math macros
-\usepackage{CodexStyle/math_macros} % custom latex macros (macros.sty)
+%%% Import custom math macros @@@@@@@@@@@@@@@@@@@@@@@@ RENAME THIS
+\usepackage{CodexStyle/shortform_math_macros} % custom latex macros (macros.sty)
 
 %------------Fonts (Body and math)--------------
 \usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
@@ -88,9 +103,17 @@ labelsep  = space
 \setmathfont{Libertinus Math}[ % nice neutral universal math font
     Scale=MatchLowercase % set scale
 ]
-\setmathfont{Latin Modern Math}[ % switching up some symbols
-    range = {\mathcal, \dagger, \ddagger}, % getting back mathcal and less dramatic daggers
-    Scale = MatchLowercase % set scale
+\setmathfont{Latin Modern Math}[ % setting daggers
+    range = {\dagger, \ddagger}, % less dramatic daggers
+    Scale=MatchLowercase % set scale
+]
+\setmathfont{STIX Two Math}[ % mathcal
+range = {\mathcal}, % getting a sober mathcal
+Scale = MatchUppercase % set scale (only need uppercases)
+]
+\setmathfont{TeX Gyre Termes Math}[ % mathscr
+range = {\mathscr}, % nice curly mathscr
+Scale = MatchUppercase % set scale (only need uppercases)
 ]
 
 %--------------------Tables---------------------
