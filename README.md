@@ -1,6 +1,8 @@
-# **Codex: A minimal template for typesetting longform documents in latex**
+# **Codex: A minimal LuaLaTeX template for typesetting various documents in latex**
 
 ## ***Description***
+
+***Update this description to add the fact that there are a couple templates now***
 
 This repository contains a latex template is meant for those that wish to typeset a longform document (thesis, memoir *etc*). This template takes its roots in a template produced by Prof. David Sénéchal (2013) and was more recently modified into its current form by my dear friend Jérôme Leblanc (2025).
 
@@ -10,6 +12,7 @@ In summary, my main contributions are:
 - Math in **Libertinus Math** (neutral font with good overall support)
 - Flexible colored boxes (both in math mode and "theorem" boxes)
 - More math macros and minor fixes
+- Adding a shortform version of the template for notes, assignments and others...
 
 ## ***Basic usage***
 
@@ -21,7 +24,7 @@ Go to `./Codex/` and run `latexmk`. Compilation should automatically proceed by 
 
 #### **Cleaning**
 
-Still in `./Codex/`, run `latexmk -c` and the cleanup should also proceed automagically. For nuclear cleanup `rm -r build/`.
+Still in `./Codex/`, run `latexmk -C` and the cleanup should also proceed automagically. For nuclear cleanup `rm -r build/`.
 
 ## ***Contents & structure***
 
@@ -38,8 +41,15 @@ Consult `LICENSE.md`
 
 #### *Priority*
 
-- Comment math macros
-- Order and comment in layout.sty
+- Merge macros from the examprep and the tight bibliographyfix
+- Move examples into a separate section (requires directory awareness I think)
+- Make a crispy template-ish MAIN.tex that can be compiled and easily switched.
+
+
+- Crisp up `math_macros.sty`
+- Crisp up both layout documents
+- Crisp up colorscheme document
+- Modularize font choices?
 - Make sure everything is language supported
 
 #### *Backburner*
@@ -48,14 +58,4 @@ Consult `LICENSE.md`
 - Figure out what I want to do for tikz and pgfplots.
 - Update subcaption.
 - Add back in pdfx as a tourdeforce
-
-## ***Coming next***
-
-Currently in the experimental branch! Demon time...
-- Make the boxes follow the style... I want the least possible goofy ahh comments/uncomments in the release version
-- Merge the fixed macros into main
-- Merge the fixed fonts into main
-- Merge the fixed style for section/subsections into main
-- Merge the bibliography fix, really nice. addcaption or whatever...
-
-The short form version of this template! (once all except backburner is done)
+- Do big picture tightening
