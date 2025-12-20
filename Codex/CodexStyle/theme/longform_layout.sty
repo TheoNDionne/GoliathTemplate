@@ -11,13 +11,10 @@
 %------------Chapters and Sections--------------
 
 %%% Chapters
-
-%\titleformat{\chapter}[display] {\bfseries\sffamily\color{RedViolet}} {\filright
 \titleformat{\chapter}[display] {\bfseries\color{MainColor}} {\filright
 \enspace \Large \chapterstring~\thechapter} {14pt} {\Huge\filcenter}
 
 %%% Sections
-
 \titleformat{\section}{\vspace{0mm plus 2cm}\addpenalty{-1000}\color{MainColor}\Large\bfseries}{\thesection}{1em}{}
 [{\color{HighlightColor}\titlerule[1.5pt]}]
 
@@ -28,7 +25,13 @@
 \titleformat{\subsubsection}{\penalty-500\vspace{0pt plus 2pt}{}\bfseries}{\thesubsubsection}{}{}[\vspace{-14pt}]
 
 %--------------General Page Layout--------------
-\geometry{letterpaper,lmargin=1.0in,rmargin=1.0in,tmargin=1.0in,bmargin=1.0in} % margins and page layout
+\geometry{ % margins and page layout
+    letterpaper,
+    lmargin = 1.0in,
+    rmargin = 1.0in,
+    tmargin = 1.0in,
+    bmargin = 1.0in
+}
 \setlength{\parindent}{4ex} 	% paragraph indentation
 \setlength{\parskip}{2ex plus 0.5ex minus 0.2ex} % vertical space between paragraphs
 
