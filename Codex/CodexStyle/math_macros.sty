@@ -8,7 +8,7 @@
 % \let\epsilon\varepsilon
 % \let\varepsilon\oldepsilon
 
-% Better \bar -----------------------
+% Better bars -----------------------
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 
 % Équations -----------------------
@@ -28,34 +28,34 @@
 \newcommand{\acc}[1]{\left\lbrace #1 \right\rbrace} % {#}
 
 % Vectors -----------------------
-\newcommand{\ve}[1]{\symbf{#1}} % Upright bold face.
+\newcommand{\ve}[1]{\symbf{#1}} % Upright bold face
 \newcommand{\vu}[1]{\hat{\ve{#1}}} % Hat vector upright bold face
 \newcommand{\tens}{\otimes} % Tensor product
 \newcommand{\nablav}{\bm{\nabla}} % Bold gradient
 
 
 % Trig. functions with automatic formating  -----------------------
-\newcommandx{\Sin}[2][1={}]{\symup{sin}^{#1}\!\p{#2}}
-\newcommandx{\Cos}[2][1={}]{\symup{cos}^{#1}\!\p{#2}}
-\newcommandx{\Tan}[2][1={}]{\symup{tan}^{#1}\!\p{#2}}
-\newcommandx{\Csc}[2][1={}]{\symup{csc}^{#1}\!\p{#2}}
-\newcommandx{\Sec}[2][1={}]{\symup{sec}^{#1}\!\p{#2}}
-\newcommandx{\Cot}[2][1={}]{\symup{cot}^{#1}\!\p{#2}}
-\newcommandx{\Arcsin}[2][1={}]{\symup{arcsin}^{#1}\!\p{#2}}
-\newcommandx{\Arccos}[2][1={}]{\symup{arccos}^{#1}\!\p{#2}}
-\newcommandx{\Arctan}[2][1={}]{\symup{arctan}^{#1}\!\p{#2}}
-\newcommandx{\Sinh}[2][1={}]{\symup{sinh}^{#1}\!\p{#2}}
-\newcommandx{\Cosh}[2][1={}]{\symup{cosh}^{#1}\!\p{#2}}
-\newcommandx{\Tanh}[2][1={}]{\symup{tanh}^{#1}\!\p{#2}}
+\newcommandx{\Sin}[2][1={}]{\operatorname{sin}^{#1}\!\p{#2}}
+\newcommandx{\Cos}[2][1={}]{\operatorname{cos}^{#1}\!\p{#2}}
+\newcommandx{\Tan}[2][1={}]{\operatorname{tan}^{#1}\!\p{#2}}
+\newcommandx{\Csc}[2][1={}]{\operatorname{csc}^{#1}\!\p{#2}}
+\newcommandx{\Sec}[2][1={}]{\operatorname{sec}^{#1}\!\p{#2}}
+\newcommandx{\Cot}[2][1={}]{\operatorname{cot}^{#1}\!\p{#2}}
+\newcommandx{\Arcsin}[2][1={}]{\operatorname{arcsin}^{#1}\!\p{#2}}
+\newcommandx{\Arccos}[2][1={}]{\operatorname{arccos}^{#1}\!\p{#2}}
+\newcommandx{\Arctan}[2][1={}]{\operatorname{arctan}^{#1}\!\p{#2}}
+\newcommandx{\Sinh}[2][1={}]{\operatorname{sinh}^{#1}\!\p{#2}}
+\newcommandx{\Cosh}[2][1={}]{\operatorname{cosh}^{#1}\!\p{#2}}
+\newcommandx{\Tanh}[2][1={}]{\operatorname{tanh}^{#1}\!\p{#2}}
 
 
 % Matrices -----------------------
 \newcommand{\mat}[1]{\begin{bmatrix} #1 \end{bmatrix}} % Matrices with hooks.
 \newcommand{\pmat}[1]{\begin{pmatrix} #1 \end{pmatrix}} % Matrices with parentheses.
 \newcommand{\deter}[1]{\abs{\begin{matrix} #1 \end{matrix}}} % Determinant.
-\newcommand{\Det}[1]{\symup{det}\p{#1}} % det(#)
-\newcommand{\Tr}[1]{\symup{Tr}\p{#1}} % Tr(#)
-\newcommand{\ma}[1]{\symup{#1}} % upright matrix
+\newcommand{\Det}[1]{\operatorname{det}\p{#1}} % det(#)
+\newcommand{\Tr}[1]{\operatorname{Tr}\p{#1}} % Tr(#)
+\newcommand{\ma}[1]{\operatorname{#1}} % upright matrix
 
 
 % Derivatives -----------------------
@@ -75,8 +75,8 @@
 \newcommandx{\Int}[2][1={},2={}]{\int_{#1}^{#2}} % Faster bounded integrals.
 
 % Complex numbers -----------------------
-\renewcommand{\Re}[1]{\symup{Re}\acc{#1}} % Re{#}
-\renewcommand{\Im}[1]{\symup{Im}\acc{#1}} % Im{#}
+\renewcommand{\Re}[1]{\operatorname{Re}\acc{#1}} % Re{#}
+\renewcommand{\Im}[1]{\operatorname{Im}\acc{#1}} % Im{#}
 
 
 % Constants and physical symbols -----------------------
@@ -92,6 +92,8 @@
 % Commentaires et rédactions -----------------------
 \newcommand{\red}[1]{{\color{red}#1}}
 % \newcommand{\comment}[1]{\marginpar{\parbox[b]{\marginparwidth}{\color{red}#1}}}
+
+% fixing the hat commands
 
 %%% Boxes
 
