@@ -1,12 +1,12 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Mathématiques et physique
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% Math and physics %
+%%%%%%%%%%%%%%%%%%%%
 % My beloved TeX-JAM macros (ty JL <3)
 
 % Better epsilon -----------------------
-\let\oldepsilon\epsilon
-\let\epsilon\varepsilon
-\let\varepsilon\oldepsilon
+% \let\oldepsilon\epsilon
+% \let\epsilon\varepsilon
+% \let\varepsilon\oldepsilon
 
 % Better \bar -----------------------
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
@@ -71,7 +71,8 @@
 
 % Integrals -----------------------
 \newcommand{\intinf}{\int\displaylimits_{-\infty}^{\infty}} % From -00 to 00.
-\newcommandx{\Int}[2][1={},2={}]{\int\displaylimits_{#1}^{#2}} % Faster bounded integrals.
+\newcommandx{\Intdisp}[2][1={},2={}]{\int\displaylimits_{#1}^{#2}} % Faster bounded integrals with displaymaths.
+\newcommandx{\Int}[2][1={},2={}]{\int_{#1}^{#2}} % Faster bounded integrals.
 
 % Complex numbers -----------------------
 \renewcommand{\Re}[1]{\symup{Re}\acc{#1}} % Re{#}
@@ -86,7 +87,7 @@
 \newcommand{\q}{\symbf{q}} % Wave vector.
 
 % Polarizing operator notation ----------------------
-\newcommand{\op}[1]{\widehat{\symup{#1}}} % upright and hat on operators
+\newcommand{\op}[1]{\hat{\symup{#1}}} % upright and hat on operators
 
 % Commentaires et rédactions -----------------------
 \newcommand{\red}[1]{{\color{red}#1}}
