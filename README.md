@@ -29,7 +29,7 @@ This template takes its roots in a template crafted by the wise **Prof. David SÃ
 
 ## ***License***
 
-Consult `LICENSE.md`
+GNU GPL v3 (as included).
 
 ----
 
