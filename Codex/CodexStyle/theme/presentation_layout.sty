@@ -36,4 +36,21 @@
 \setlength{\fboxrule}{1pt} % sets the border width globally (or locally in a group)
 \setlength{\fboxsep}{4pt}  % sets padding between frame and content
 
+\setbeamerfont{footline}{size=\small}
+
 % \newcommand{\boxesnumberwithin}{section} % sets the counter for the boxes
+
+\setbeamercolor{frametitle}{fg=white, bg=MainColor}
+
+% Remove ugly ahh navigation symbols
+\beamertemplatenavigationsymbolsempty
+% Frame number
+\addtobeamertemplate{navigation symbols}{}{
+    \usebeamerfont{footline}
+    \usebeamercolor[VividColor]{footline}
+    \hspace{2em}
+    \insertframenumber/\inserttotalframenumber
+}
+
+
+\newcommand{\boxesnumberwithin}{section} % sets the counter for the boxes
