@@ -130,8 +130,9 @@
 % Define a reusable box style %
 %-----------------------------%
 
+% numbered and colored with the MainColor
 \tcbset{
-mytheoremstyle/.style={
+namedcolorstyle/.style={
     fonttitle=\bfseries\upshape, % bold upright title
     fontupper=\upshape, % upright body font
     arc=0mm, % sharpish corner
@@ -147,18 +148,41 @@ mytheoremstyle/.style={
 }
 }
 
+% unnumbered and colored
+\tcbset{
+unnamedcolorstyle/.style={
+    % fonttitle=\bfseries\upshape, % bold upright title
+    % fontupper=\upshape, % upright body font
+    arc=0mm, % sharpish corner
+    colback=MainColor!2, % color of the background
+    colframe=MainColor, % color of the frame
+    width=\linewidth, % width of the box
+    boxrule=1pt,
+    top=1mm,
+    bottom=1mm,
+    left=2mm,
+    right=2mm,
+    enhanced
+}
+}
+
 % Defining the boxes
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{theorembox}%
-    {\theoremname}{mytheoremstyle}{theorem}
+    {\theoremname}{namedcolorstyle}{theorem}
 
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{definitionbox}%
-    {\definitionname}{mytheoremstyle}{definition}
+    {\definitionname}{namedcolorstyle}{definition}
 
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{corollarybox}%
-    {\corollaryname}{mytheoremstyle}{corollary}
+    {\corollaryname}{namedcolorstyle}{corollary}
 
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{examplebox}%
-    {\examplename}{mytheoremstyle}{example}
+    {\examplename}{namedcolorstyle}{example}
 
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{lemmabox}%
-    {\lemmaname}{mytheoremstyle}{lemma}
+    {\lemmaname}{namedcolorstyle}{lemma}
+
+% Unnamed box
+\newtcolorbox{cbox}{
+  unnamedcolorstyle
+}
