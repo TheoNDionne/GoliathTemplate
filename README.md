@@ -40,16 +40,12 @@ GNU GPL v3 (as included).
 - Grand name uniformization tour
 - Write the contents and structure
 - Organize and partition `MAIN.tex`
-- Make a development branch and a main for public...
 
 #### *Priority*
-
-- Move examples into a separate section (requires directory awareness I think)
 
 - Make sure that the colors are defined right.
 - Crisp up `math_macros.sty`
 - Crisp up both layout documents
-- Crisp up colorscheme document
 
 #### *Backburner*
 

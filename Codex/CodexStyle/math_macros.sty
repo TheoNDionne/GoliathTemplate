@@ -151,8 +151,6 @@ namedcolorstyle/.style={
 % unnumbered and colored
 \tcbset{
 unnamedcolorstyle/.style={
-    % fonttitle=\bfseries\upshape, % bold upright title
-    % fontupper=\upshape, % upright body font
     arc=0mm, % sharpish corner
     colback=MainColor!2, % color of the background
     colframe=MainColor, % color of the frame
@@ -166,7 +164,10 @@ unnamedcolorstyle/.style={
 }
 }
 
-% Defining the boxes
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Defining named boxes %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{theorembox}%
     {\theoremname}{namedcolorstyle}{theorem}
 
@@ -182,7 +183,10 @@ unnamedcolorstyle/.style={
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{lemmabox}%
     {\lemmaname}{namedcolorstyle}{lemma}
 
-% Unnamed box
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Defining unnamed boxes %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newtcolorbox{cbox}{
   unnamedcolorstyle
 }
