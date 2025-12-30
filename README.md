@@ -35,8 +35,6 @@ GNU GPL v3 (as included).
 
 ## ***Todo***
 
-- ***Coming soon*** A crispy beamer template.
-
 - Grand name uniformization tour
 - Write the contents and structure
 - Organize and partition `MAIN.tex`
@@ -45,7 +43,12 @@ GNU GPL v3 (as included).
 
 - Make sure that the colors are defined right.
 - Crisp up `math_macros.sty`
-- Crisp up both layout documents
+- Change `math_macros.sty` -> `macros.sty`
+- Make a clean example document for each
+
+#### *Beamer*
+
+- Tighten up itemize... looks a bit wonky.
 
 #### *Backburner*
 
