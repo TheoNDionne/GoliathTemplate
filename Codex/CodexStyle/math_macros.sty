@@ -164,6 +164,22 @@ unnamedcolorstyle/.style={
 }
 }
 
+% unnumbered and highlight
+\tcbset{
+unnamedhighlightstyle/.style={
+    arc=0mm, % sharpish corner
+    colback=HighlightColor!2, % color of the background
+    colframe=HighlightColor, % color of the frame
+    width=\linewidth, % width of the box
+    boxrule=1pt,
+    top=1mm,
+    bottom=1mm,
+    left=2mm,
+    right=2mm,
+    enhanced
+}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Defining named boxes %
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -189,4 +205,8 @@ unnamedcolorstyle/.style={
 
 \newtcolorbox{cbox}{
   unnamedcolorstyle
+}
+
+\newtcolorbox{highlightcbox}{
+  unnamedhighlightstyle
 }

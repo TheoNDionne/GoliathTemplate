@@ -1,7 +1,32 @@
 \documentclass{beamer}
 \input{CodexStyle/preamble.tex}
 
+\title[Short title]
+{A long title that can span multiple pages and is kind of drawn out and mostly unnecessary}
+
+\author{Théo N. Dionne}
+
+\institute[]{
+    APS March Meeting \\
+    Denver Colorado \\
+    \today
+}
+
+\date{} % suppress date field
+
+\titlegraphic{
+    \includegraphics[width=3cm]{./figures/logos/UdeS_logo_h_noir_cropped.pdf}
+    \hspace{1cm}
+    \includegraphics[width=4cm]{./figures/logos/IQ_logo_h_noir_cropped.pdf}
+}
+
 \begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}\frametitle{Table of contents}
+    \tableofcontents
+\end{frame}
 
 \begin{frame}
 \frametitle{Title}
@@ -13,7 +38,7 @@ The quick brown fox jumps over the lazy dog.
 \end{frame}
 
 \section{A section}
-
+\subsection{A subsection}
 \begin{frame}
 \frametitle{What}\pause
 \begin{itemize}
@@ -22,11 +47,28 @@ The quick brown fox jumps over the lazy dog.
 	\item Three.
 \end{itemize}
 \end{frame}
-
+\subsection{Another subsection}
 \begin{frame}\frametitle{The state of the world}
 \begin{theorembox}{Birb}{thm:birb}
 	Birbs exist.
 \end{theorembox}
+\end{frame}
+
+\begin{frame}\frametitle{Colorbox test}
+\begin{highlightcbox}
+	\begin{center}
+	    A very important result.
+	\end{center}
+\end{highlightcbox}
+\end{frame}
+
+\begin{frame}\frametitle{A test of what the box environment looks like}
+    \begin{cbox}
+    This is the fundamental theorem of calculus:
+    \al{
+        \int_{a}^{b}f(t)\,\D{t} = F(b) - F(a)
+    }
+    \end{cbox}
 \end{frame}
 
 \end{document}

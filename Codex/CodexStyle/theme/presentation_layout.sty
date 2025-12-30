@@ -1,44 +1,19 @@
-% %--------------Headers and Footers--------------
-
-% \usepackage[plainheadsepline,markcase=ignoreuppercase]{scrlayer-scrpage}
-% \usepackage{typearea}
-% \pagestyle{scrheadings}
-% % \renewcommand{\chaptermark}[1]{\markboth{{\thechapter. #1}}{}}
-% \renewcommand{\sectionmark}[1]{\markboth{{\thesection. #1}}{}}
-% % \newcommand\chapterstring{Chapitre}
-% \usepackage{titlesec}
-
-% %-------------------Sections--------------------
-
-% %%% Sections
-% \titleformat{\section}{\vspace{0mm plus 2cm}\addpenalty{-1000}\color{MainColor}\Large\bfseries}{\thesection}{1em}{}
-% [{\color{MainColor}\titlerule[1.5pt]}]
-
-% %%% Subsections
-% \titleformat{\subsection}{\addpenalty{-500}\color{MainColor}\large\bfseries}{\thesubsection}{1em}{}
-
-% %%% Subsubsections
-% \titleformat{\subsubsection}{\penalty-500\vspace{0pt plus 2pt}\bfseries}{\thesubsubsection}{1em}{}[\vspace{-14pt}]
-
-% %--------------General Page Layout--------------
-% \geometry{ % margins and page layout
-%     letterpaper,
-%     lmargin = 1.0in,
-%     rmargin = 1.0in,
-%     tmargin = 1.0in,
-%     bmargin = 1.0in
-% }
-% \setlength{\parindent}{4ex} 	% paragraph indentation
-% \setlength{\parskip}{2ex plus 0.5ex minus 0.2ex} % vertical space between paragraphs
+\usetheme{default}
 
 %------------Box dimensions----------------
 
 \setlength{\fboxrule}{1pt} % sets the border width globally (or locally in a group)
 \setlength{\fboxsep}{4pt}  % sets padding between frame and content
 
-\setbeamerfont{footline}{size=\small}
+%-----setup frames
 
-% \newcommand{\boxesnumberwithin}{section} % sets the counter for the boxes
+\usefonttheme{serif}
+
+\setbeamerfont{title}{family=\sffamily, series=\bfseries}
+\setbeamerfont{frametitle}{family=\sffamily, series=\bfseries}
+\setbeamerfont{normal text}{family=\rmfamily}
+
+\setbeamerfont{footline}{size=\small}
 
 \setbeamercolor{frametitle}{fg=white, bg=MainColor}
 
@@ -47,10 +22,34 @@
 % Frame number
 \addtobeamertemplate{navigation symbols}{}{
     \usebeamerfont{footline}
-    \usebeamercolor[VividColor]{footline}
+    \usebeamercolor[MainColor]{footline}
     \hspace{2em}
     \insertframenumber/\inserttotalframenumber
 }
 
-
 \newcommand{\boxesnumberwithin}{section} % sets the counter for the boxes
+
+\setbeamercolor{item}{fg=MainColor}
+
+%------------URL setup---------------------
+\colorlet{URLColor}{MainColor}
+\colorlet{LinkColor}{black}
+\colorlet{CiteColor}{MainColor}
+
+% ------------
+% TOC settings
+% ------------
+\setbeamercolor{section in toc}{fg=black}
+\setbeamertemplate{section in toc}[square]
+\setbeamercolor{section number projected}{bg=MainColor, fg=white} % setting the color for the section numbers within toc
+\setbeamertemplate{subsection in toc}{%
+\vspace{0.25em}\hspace{2em}{\color{MainColor}\raise0pt\hbox{\rule[0.5ex]{0.9ex}{0.6ex}\small\raise1.55pt\hbox{$\!{\blacktriangleright}$}~\inserttocsubsection}}\par}
+
+
+% Setting color for title and subtitle in title page
+\setbeamercolor{title}{fg=white, bg=MainColor}
+\setbeamercolor{subtitle}{fg=white, bg=MainColor}
+
+% itemize stuff
+\defbeamertemplate{itemize item}{compoundarrow}{\raise0pt\hbox{\rule[0.5ex]{0.9ex}{0.6ex}\small\raise1.55pt\hbox{$\!{\blacktriangleright}$}}}
+\setbeamertemplate{itemize item}[compoundarrow]

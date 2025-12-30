@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %----------------Language Support---------------
-\usepackage[french]{babel} % language support priority language last
+\usepackage[english]{babel} % language support priority language last
 
 %%% French renamings
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
@@ -12,7 +12,7 @@
 \usepackage[x11names]{xcolor} % adds in typical color features
 
 %%% Choose color theme
-\usepackage{CodexStyle/colorthemes/colors_marine} % choose a style
+\usepackage{CodexStyle/colorthemes/colors_sherbrooke} % choose a style
 
 %---------------General packages----------------
 \usepackage{setspace}        % line spacing
@@ -88,7 +88,9 @@ labelsep  = space
 %%% Import custom math macros
 \usepackage{CodexStyle/math_macros} % custom latex macros (macros.sty)
 
-%------------Fonts (Body and Math)--------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------Fonts (Body and Math)--------------%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
 \usepackage{unicode-math} % Finer math font selection
 
@@ -113,9 +115,7 @@ labelsep  = space
         Ligatures = TeX,
         Kerning   = On,
     ]
-    \setbeamerfont{normal text}{family=\rmfamily}
     \setsansfont{Libertinus Sans}
-    \setbeamerfont{frametitle}{family=\sffamily}
 }{ %%% ELSE %%%
     \PackageError{mydoc}
         {Unsupported document class!}
@@ -123,7 +123,9 @@ labelsep  = space
 }}}
 \makeatother
 
-%%% Math fonts (Libertinus and Latin Modern)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------Math fonts---------%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setmathfont{Libertinus Math}[ % nice neutral (near) universal math font
     Scale=MatchLowercase % set scale
 ]
