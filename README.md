@@ -1,5 +1,5 @@
 # **Codex: A minimal multiformat LuaLaTeX template**
-----
+------------------------------------------------
 ## ***Description***
 
 This repository contains a relatively flexible and minimalistic LuaLaTeX template that can be used to typeset both longform documents (theses, formal reports *etc*.) and shortform documents (notes, assignments *etc.*).
@@ -31,7 +31,7 @@ This template takes its roots in a template crafted by the wise **Prof. David SÃ
 
 GNU GPL v3 (as included).
 
-----
+------------------------------------------------
 
 ## ***Todo***
 
@@ -46,6 +46,7 @@ GNU GPL v3 (as included).
 
 - Move examples into a separate section (requires directory awareness I think)
 
+- Make sure that the colors are defined right.
 - Crisp up `math_macros.sty`
 - Crisp up both layout documents
 - Crisp up colorscheme document
@@ -58,7 +59,7 @@ GNU GPL v3 (as included).
 - Add back in pdfx as a tourdeforce
 - Do big picture tightening
 
----
+-----------------------------------------------
 ### Backstore
 
 In summary, my main contributions are:

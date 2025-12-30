@@ -1,0 +1,56 @@
+% %--------------Headers and Footers--------------
+
+% \usepackage[plainheadsepline,markcase=ignoreuppercase]{scrlayer-scrpage}
+% \usepackage{typearea}
+% \pagestyle{scrheadings}
+% % \renewcommand{\chaptermark}[1]{\markboth{{\thechapter. #1}}{}}
+% \renewcommand{\sectionmark}[1]{\markboth{{\thesection. #1}}{}}
+% % \newcommand\chapterstring{Chapitre}
+% \usepackage{titlesec}
+
+% %-------------------Sections--------------------
+
+% %%% Sections
+% \titleformat{\section}{\vspace{0mm plus 2cm}\addpenalty{-1000}\color{MainColor}\Large\bfseries}{\thesection}{1em}{}
+% [{\color{MainColor}\titlerule[1.5pt]}]
+
+% %%% Subsections
+% \titleformat{\subsection}{\addpenalty{-500}\color{MainColor}\large\bfseries}{\thesubsection}{1em}{}
+
+% %%% Subsubsections
+% \titleformat{\subsubsection}{\penalty-500\vspace{0pt plus 2pt}\bfseries}{\thesubsubsection}{1em}{}[\vspace{-14pt}]
+
+% %--------------General Page Layout--------------
+% \geometry{ % margins and page layout
+%     letterpaper,
+%     lmargin = 1.0in,
+%     rmargin = 1.0in,
+%     tmargin = 1.0in,
+%     bmargin = 1.0in
+% }
+% \setlength{\parindent}{4ex} 	% paragraph indentation
+% \setlength{\parskip}{2ex plus 0.5ex minus 0.2ex} % vertical space between paragraphs
+
+%------------Box dimensions----------------
+
+\setlength{\fboxrule}{1pt} % sets the border width globally (or locally in a group)
+\setlength{\fboxsep}{4pt}  % sets padding between frame and content
+
+\setbeamerfont{footline}{size=\small}
+
+% \newcommand{\boxesnumberwithin}{section} % sets the counter for the boxes
+
+\setbeamercolor{frametitle}{fg=white, bg=MainColor}
+
+% Remove ugly ahh navigation symbols
+\beamertemplatenavigationsymbolsempty
+% Frame number
+\addtobeamertemplate{navigation symbols}{}{
+    \usebeamerfont{footline}
+    \usebeamercolor[VividColor]{footline}
+    \hspace{2em}
+    \insertframenumber/\inserttotalframenumber
+}
+
+
+\newcommand{\boxesnumberwithin}{section} % sets the counter for the boxes

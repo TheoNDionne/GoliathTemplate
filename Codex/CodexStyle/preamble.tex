@@ -59,16 +59,19 @@ labelsep  = space
 %---------------CodexStyle layout---------------
 % Switches between longform and shortform automatically
 \makeatletter
-\@ifclassloaded{book}{
+\@ifclassloaded{book}{ %%% BOOK %%%
     \usepackage{CodexStyle/theme/longform_layout} % load longform
 }{
-\@ifclassloaded{article}{
+\@ifclassloaded{article}{ %%% ARTICLE %%%
     \usepackage{CodexStyle/theme/shortform_layout} % load shortform
+}{
+\@ifclassloaded{beamer}{ %%% BEAMER %%%
+    \usepackage{CodexStyle/theme/presentation_layout} % load presentation
 }{
     \PackageError{mydoc}
         {Unsupported document class!}
-        {`book` -> longform, `article` -> shortform}
-}}
+        {`book` -> longform, `article` -> shortform, `beamer` -> presentation}
+}}}
 \makeatother
 
 %------------------Math Setup-------------------
@@ -91,7 +94,7 @@ labelsep  = space
 
 %%% Main font switches based on documentclass
 \makeatletter
-\@ifclassloaded{book}{
+\@ifclassloaded{book}{ %%% BOOK %%%
     \setmainfont{EB Garamond}[ % EB Garamond
         Ligatures   = TeX, % ligatures
         OpticalSize = On, % optical weight adjustment
@@ -99,16 +102,25 @@ labelsep  = space
         SmallCapsFeatures = {LetterSpace=5} % Adds spaces for small caps
     ]
 }{
-\@ifclassloaded{article}{
+\@ifclassloaded{article}{ %%% ARTICLE %%%
     \setmainfont{Libertinus Serif}[ % Libertinus in short documents
         Ligatures = TeX,
         Kerning   = On,
     ]
 }{
+\@ifclassloaded{beamer}{ %%% BEAMER %%%
+    \setmainfont{Libertinus Serif}[ % Libertinus in short documents
+        Ligatures = TeX,
+        Kerning   = On,
+    ]
+    \setbeamerfont{normal text}{family=\rmfamily}
+    \setsansfont{Libertinus Sans}
+    \setbeamerfont{frametitle}{family=\sffamily}
+}{ %%% ELSE %%%
     \PackageError{mydoc}
         {Unsupported document class!}
-        {`book` -> longform, `article` -> shortform}
-}}
+        {`book` -> longform, `article` -> shortform, `beamer` -> presentation}
+}}}
 \makeatother
 
 %%% Math fonts (Libertinus and Latin Modern)
