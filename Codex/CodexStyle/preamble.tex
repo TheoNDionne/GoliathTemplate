@@ -60,13 +60,13 @@ labelsep  = space
 % Switches between longform and shortform automatically
 \makeatletter
 \@ifclassloaded{book}{ %%% BOOK %%%
-    \usepackage{CodexStyle/theme/longform_layout} % load longform
+    \usepackage{CodexStyle/layouts/longform_layout} % load longform
 }{
 \@ifclassloaded{article}{ %%% ARTICLE %%%
-    \usepackage{CodexStyle/theme/shortform_layout} % load shortform
+    \usepackage{CodexStyle/layouts/shortform_layout} % load shortform
 }{
 \@ifclassloaded{beamer}{ %%% BEAMER %%%
-    \usepackage{CodexStyle/theme/presentation_layout} % load presentation
+    \usepackage{CodexStyle/layouts/presentation_layout} % load presentation
 }{
     \PackageError{mydoc}
         {Unsupported document class!}
@@ -170,5 +170,5 @@ labelsep  = space
 \pgfdeclarelayer{foreground}
 \pgfsetlayers{background,main,foreground}
 
-\usepackage{CodexStyle/theme/tikzstyles}
+\usepackage{CodexStyle/layouts/tikzstyles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
