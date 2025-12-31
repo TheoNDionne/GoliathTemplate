@@ -2,9 +2,12 @@
 ------------------------------------------------
 ## ***Description***
 
-This repository contains a relatively flexible and minimalistic LuaLaTeX template that can be used to typeset both longform documents (theses, formal reports *etc*.) and shortform documents (notes, assignments *etc.*).
+This repository contains a flexible and minimalistic LuaLaTeX template that can be used to typeset:
+- **longform** documents (theses, formal reports, ...)
+- **shortform** documents (notes, assignments, ...)
+- **beamer** presentations (seminars, conference presentations, ...)
 
-The main philosophy of this project is to provide a pragmatic hierarchy of customization layers allowing one to tweak and improve this template with minimal busywork in any way. Additionaly, these templates have been designed to use more or less the same preamble (where all necessary differences are assigned modularly) in order to keep all templates coordinated.
+The main philosophy of this project is to provide a versatile template with minimal busywork. In particular, these templates use the same preamble where documentclass-specific information is stored in class specific files.
 
 ## ***Basic usage***
 
@@ -25,7 +28,7 @@ Still in `Codex/`, run `latexmk -C` and the cleanup should also proceed automagi
 ------------------------------------------------
 ## ***Geneology & Credits***
 
-This template takes its roots in a template crafted by the wise **Prof. David Sénéchal** (Université de Sherbrooke) which was forked circa 2013. More recently, it was updated by my dear friend **Jérôme Leblanc** (2025) who among many things fixed some pesky bugs and merged the template with my favorite "old faitful" template [TeX-JAM](https://github.com/LJerome94/TeX-JAM). Since I realized that I also needed to write my thesis eventually, I started working on the template, tweaking some fonts and figured that I might aswell make something that can benefit others along the way.
+This template takes its roots in a template crafted by the wise **Prof. David Sénéchal** (Université de Sherbrooke) which was forked circa 2013. More recently, it was updated by my dear friend **Jérôme Leblanc** (2025) who among many things fixed some pesky bugs and merged the template with my favorite "old faitful" template [TeX-JAM](https://github.com/LJerome94/TeX-JAM). Since I realized that I also needed to write my thesis eventually, I started working on the template, tweaking some fonts and figured that I might aswell make something that can benefit others along the way. The shortform template is simply a minor variation of the longform template. Moreover, I was directly inspired by **Antoine de Lagrave** (2025) for the choice of Libertinus as a font and for his minimal beamer template [UniTeX](https://github.com/antoinedelagrave/UniTeX).
 
 ## ***License***
 
@@ -41,14 +44,12 @@ GNU GPL v3 (as included).
 
 #### *Priority*
 
-- Make sure that the colors are defined right.
-- Crisp up `math_macros.sty`
-- Change `math_macros.sty` -> `macros.sty`
+- Crisp up `macros.sty`
 - Make a clean example document for each
 
 #### *Beamer*
 
-- Fix bibliography... a little bit fucked...
+- Fix bibliography... ugly
 
 #### *Backburner*
 
