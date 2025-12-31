@@ -1,6 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%----------------Language Support---------------
-\usepackage[english]{babel} % language support priority language last
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                                     %
+%                                                      PREAMBLE.STY                                                   %
+%                                                                                                                     %
+%                                                                                                                     %
+%                                                                                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%
+%                 Control Panel                 %
+%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%
+
+\newcommand{\CodexLanguage}{french} % set language
+\newcommand{\CodexColorTheme}{CodexStyle/colorthemes/colors_marine} % set colortheme (path to desired .sty)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                Language Support               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[\CodexLanguage]{babel} % language support priority language last
 
 %%% French renamings
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
@@ -8,11 +24,13 @@
   \renewcommand{\refname}{Bibliographie}%
 }
 
-%--------------------Colors---------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    Colors                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[x11names]{xcolor} % adds in typical color features
 
 %%% Choose color theme
-\usepackage{CodexStyle/colorthemes/colors_sherbrooke} % choose a style
+\usepackage{\CodexColorTheme} % choose a style
 
 %---------------General packages----------------
 \usepackage{setspace}        % line spacing
@@ -143,7 +161,7 @@ labelsep  = space
 \renewcommand{\arraystretch}{1.5} % vertical spacing of tables
 
 %%% UNDER CONSTRUCTION %%%
-%-------------------------------------------------------------------------------
+%-----------------------------------------------
 % Figures TiKz !!!TODO FIX THIS!!!
 \usepackage{tikz}
 \usetikzlibrary{
