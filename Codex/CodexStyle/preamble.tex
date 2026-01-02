@@ -24,17 +24,19 @@
 \newcommand{\CodexLanguage}{french} % set language
 \newcommand{\CodexColorTheme}{CodexStyle/colorthemes/colors_marine} % set colortheme (path to desired .sty)
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                Language Support               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[\CodexLanguage]{babel} % language support priority language last (set in control panel)
 
-%%% French renamings
+% French renamings ------------------------------
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
 \addto\captionsfrench{%
   \renewcommand{\refname}{Bibliographie}%
 }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                     Colors                    %
@@ -42,6 +44,7 @@
 
 \usepackage[x11names]{xcolor} % adds in typical color features
 \usepackage{\CodexColorTheme} % choose a style (set in control panel)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               General Packages                %
@@ -64,8 +67,7 @@ labelfont = bf,
 labelsep  = space
 ]{caption}             % tweak caption layout and format
 \usepackage{csquotes}  % For quotes
-
-\usepackage{hyperref}[
+\usepackage{hyperref}[ % hyperref with some setup
     backref     = page,
     pagebackref = true,
     hyperindex  = true,
@@ -77,15 +79,16 @@ labelsep  = space
 % \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22] % ???
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-% options PDF
+% more hyperref options
 \hypersetup{
-    colorlinks=true,         % colorise les liens
-    breaklinks=true,         % permet le retour la ligne dans les liens trop longs
-    urlcolor=URLColor,       % couleur des hyperliens (doit inclure x11names dans xcolor ci-dessus)
-    linkcolor=LinkColor,     % couleur des liens internes
-    citecolor=CiteColor,     % couleur des liens de citation
-    bookmarksopen=true,      % ouvre les signets PDF au départ
+    colorlinks=true,         % colorize links
+    breaklinks=true,         % carriage return for long links
+    urlcolor=URLColor,       % hyperlink url color
+    linkcolor=LinkColor,     % internal link color
+    citecolor=CiteColor,     % citation link color
+    bookmarksopen=true,      % opens pdf bookmarks in the beginning
 }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                 Document Layout               %
@@ -108,6 +111,7 @@ labelsep  = space
 }}}
 \makeatother
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                   Math Setup                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -124,6 +128,7 @@ labelsep  = space
 
 %%% Import custom math macros
 \usepackage{CodexStyle/macros} % custom latex macros (macros.sty)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  Fonts (Body)                 %
@@ -161,6 +166,7 @@ labelsep  = space
 }}}
 \makeatother
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  Fonts (Math)                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,6 +179,7 @@ labelsep  = space
     Scale=MatchLowercase % set scale
 ]
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                     Tables                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,6 +190,7 @@ labelsep  = space
 \newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
 \newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
 \renewcommand{\arraystretch}{1.5} % vertical spacing of tables
+
 
 %%% UNDER CONSTRUCTION %%%
 %-----------------------------------------------
