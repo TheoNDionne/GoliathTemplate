@@ -110,6 +110,28 @@
 \input{sections/methode/methode.tex}
 \chapter{Why should I care?}
 
+NVM, here is the monospaced test \texttt{\backslash ketbra}
+
+Here I am testing the difference between different type of differentials
+\eqn{
+    &\text{d}x\\ % in body font
+    &\symup{d}x\\ % in math font
+    &\operatorname{d}x\\ % wrong spacing
+    &\mathop{d}x\\ % wrong spacing and font
+    &\mathrm{d}x % in body font
+}
+How about a derivative?
+\eqn{
+    \frac{\symup{d}g}{\symup{d}x}
+}
+Now, how about a functional derivative?
+\eqn{
+    \frac{\delta g}{\delta f}
+}
+Ok, and how about with accents?
+\eqn{
+    \frac{\symup{d} \tilde{g}}{\symup{d}\dot{q}} \equiv \frac{\delta \tilde{g}}{\delta \dot{q}} =
+}
 
 %-------------------------------------------------------------------------------
 % conclusion

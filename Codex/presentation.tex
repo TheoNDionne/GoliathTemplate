@@ -86,14 +86,12 @@ The quick brown fox jumps over the lazy dog \cite{hubbardI}.
 
 \begin{frame}\frametitle{A simple derivation}
     Extremization of the action entails:
-    \begin{equation}
-    \begin{aligned}
+    \ald{
         \cboxed{0 = \delta\mathcal{S}} &= \int_{t_i}^{t_f}\D{t}\,\delta\mathcal{L}\pause\\
         &= \int_{t_i}^{t_f}\D{t}\cro{\ddf[\mathcal{L}]{q}\delta{q} + \ddf[\mathcal{L}]{\mspace{1.5mu}\dot{q}}\delta\mspace{1.5mu}\dot{q}}\pause\\
         &= \int_{t_i}^{t_f}\D{t}\cro{\ddf[\mathcal{L}]{q} - \dd{t}\ddf[\mathcal{L}]{\mspace{1.5mu}\dot{q}}}\delta{q} + \underbrace{\int_{t_i}^{t_f}\D{t}\dd{t}\p{\ddf[\mathcal{L}]{\mspace{1.5mu}\dot{q}}\delta{q}}}_{\text{vanishes (B.C.s)}}\pause\\
         &\Rightarrow \cboxed{\ddf[\mathcal{L}]{q} - \dd{t}\ddf[\mathcal{L}]{\mspace{1.5mu}\dot{q}} = 0}\pause
-    \end{aligned}
-    \end{equation}
+    }
     The converse is equally true, hence:\pause
     \al{\highlightcboxed{
         \delta\mathcal{S} = 0 \text{ \& B.C.s} \Longleftrightarrow \ddf[\mathcal{L}]{q} - \dd{t}\ddf[\mathcal{L}]{\mspace{1.5mu}\dot{q}} = 0

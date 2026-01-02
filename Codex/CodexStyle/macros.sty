@@ -4,41 +4,50 @@
 %
 % Macros provided here:
 % -> Math macros (shortcuts and additional notation)
+% -> Annotation macros (colored text)
 % -> Math mode color boxes (cboxed and highlightcboxed)
-% -> Titled boxes and untitled boxes
+%   -> Titled boxes and untitled boxes
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%
-% Math and physics %
-%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 Math & Physics                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % My beloved TeX-JAM macros (ty JL <3)
+
 
 % Better epsilon -----------------------
 % \let\oldepsilon\epsilon
 % \let\epsilon\varepsilon
 % \let\varepsilon\oldepsilon
 
+
 % Better bars -----------------------
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 
-% Équations -----------------------
+
+% Equations -----------------------
 \newcommand{\al}[1]{\begin{align} #1 \end{align}} % Numbered equation(s),
+\newcommand{\ald}[1]{\begin{equation}\begin{aligned} #1 \end{aligned}\end{equation}} % One number per block
 \newcommand{\eqn}[1]{\begin{align*} #1 \end{align*}} % Number-less equation(s),
 \newcommand{\sys}[1]{\begin{dcases*} #1 \end{dcases*}} % System of equations.
+
 
 % Exponents -----------------------
 \newcommand{\Exp}[1]{\symup{e}^{#1}}		% e^#
 \newcommand{\E}[1]{\times 10^{#1}}		% X 10^#
 
-% Delimiters -----------------------
-\newcommand{\p}[1]{\left( #1 \right)}	% (#)
-\newcommand{\cro}[1]{\left[ #1 \right]}	% [#]
-\newcommand{\abs}[1]{\left| #1\right|}	% |#|
-\newcommand{\avg}[1]{\left\langle #1 \right\rangle} % <#>
-\newcommand{\acc}[1]{\left\lbrace #1 \right\rbrace} % {#}
 
-% Vectors -----------------------
+% Delimiters (auto sizing) -----------------------
+\newcommand{\p}[1]{\left( {#1} \right)}	% (#)
+\newcommand{\cro}[1]{\left[ {#1} \right]}	% [#]
+\newcommand{\abs}[1]{\left| {#1} \right|}	% |#|
+\newcommand{\avg}[1]{\left\langle {#1} \right\rangle} % <#>
+\newcommand{\acc}[1]{\left\lbrace {#1} \right\rbrace} % {#}
+
+
+% Vector notation -----------------------
 \newcommand{\ve}[1]{\symbf{#1}} % Upright bold face
 \newcommand{\vu}[1]{\hat{\ve{#1}}} % Hat vector upright bold face
 \newcommand{\tens}{\otimes} % Tensor product
@@ -46,6 +55,7 @@
 
 
 % Trig. functions with automatic formating  -----------------------
+% trigonometric functions
 \newcommandx{\Sin}[2][1={}]{\operatorname{sin}^{#1}\!\p{#2}}
 \newcommandx{\Cos}[2][1={}]{\operatorname{cos}^{#1}\!\p{#2}}
 \newcommandx{\Tan}[2][1={}]{\operatorname{tan}^{#1}\!\p{#2}}
@@ -55,9 +65,14 @@
 \newcommandx{\Arcsin}[2][1={}]{\operatorname{arcsin}^{#1}\!\p{#2}}
 \newcommandx{\Arccos}[2][1={}]{\operatorname{arccos}^{#1}\!\p{#2}}
 \newcommandx{\Arctan}[2][1={}]{\operatorname{arctan}^{#1}\!\p{#2}}
+
+% hyperbolic trigonometric functions
 \newcommandx{\Sinh}[2][1={}]{\operatorname{sinh}^{#1}\!\p{#2}}
 \newcommandx{\Cosh}[2][1={}]{\operatorname{cosh}^{#1}\!\p{#2}}
 \newcommandx{\Tanh}[2][1={}]{\operatorname{tanh}^{#1}\!\p{#2}}
+\newcommandx{\Arcsinh}[2][1={}]{\operatorname{arcsinh}^{#1}\!\p{#2}}
+\newcommandx{\Arccosh}[2][1={}]{\operatorname{arccosh}^{#1}\!\p{#2}}
+\newcommandx{\Arctanh}[2][1={}]{\operatorname{arctanh}^{#1}\!\p{#2}}
 
 
 % Matrices -----------------------
@@ -66,18 +81,20 @@
 \newcommand{\deter}[1]{\abs{\begin{matrix} #1 \end{matrix}}} % Determinant.
 \newcommand{\Det}[1]{\operatorname{det}\p{#1}} % det(#)
 \newcommand{\Tr}[1]{\operatorname{Tr}\p{#1}} % Tr(#)
-\newcommand{\ma}[1]{\operatorname{#1}} % upright matrix
+\newcommand{\ma}[1]{\symup{#1}} % upright matrix
 
 
 % Derivatives -----------------------
 \newcommand{\D}{\symup{d}} % Differential 'd'.
-\newcommandx{\dd}[3][1={},3={}]{\frac{\D^{#3} #1}{\D #2^{#3}}} % Total derivative according to #2, #1 is the function and #3 is the order.
 \newcommand{\del}{\partial} % Partial 'd'.
-\newcommandx{\ddp}[3][1={},3={}]{\frac{\del^{#3} #1}{\del #2^{#3}}} % Dérivée partielle selon #2, #1 est la fonction est #3 est l'ordre.
-\newcommandx{\ddf}[3][1={},3={}]{\frac{\delta^{#3} #1}{\delta #2^{#3}}} % Dérivée partielle selon #2, #1 est la fonction est #3 est l'ordre.
-\newcommand{\eval}[1]{\left. {#1} \right|} % Bar on the right of expression.
 \newcommand{\delbar}{\slashed{\del}} % Partial Inexact differential.
 \newcommand{\dbar}{\dj}% Inexact differential.
+
+% derivatives: w.r.t #2, #1 is the function and #3 is the order.
+\newcommandx{\dd}[3][1={},3={}]{\frac{\D^{#3} #1}{\D #2^{#3}}} % Total derivative
+\newcommandx{\ddp}[3][1={},3={}]{\frac{\del^{#3} #1}{\del #2^{#3}}} % Dérivée partielle
+\newcommandx{\ddf}[3][1={},3={}]{\frac{\delta^{#3} #1}{\delta #2^{#3}}} % Functional derivative
+\newcommand{\eval}[1]{\left. {#1} \right|} % Bar on the right of expression.
 
 
 % Integrals -----------------------
@@ -85,30 +102,27 @@
 \newcommandx{\Intdisp}[2][1={},2={}]{\int\displaylimits_{#1}^{#2}} % Faster bounded integrals with displaymaths.
 \newcommandx{\Int}[2][1={},2={}]{\int_{#1}^{#2}} % Faster bounded integrals.
 
+
 % Complex numbers -----------------------
 \newcommand{\real}[1]{\operatorname{Re}\acc{#1}} % Re{#}
 \newcommand{\imag}[1]{\operatorname{Im}\acc{#1}} % Im{#}
 
 
-% Constants and physical symbols -----------------------
-\newcommand{\kb}{k_\symup{B}} % Boltzmann's constant.
-\let\oldAA\AA
-\renewcommand{\r}{\symbf{r}} % Position vector.
-\renewcommand{\k}{\symbf{k}} % Wave vector.
-\newcommand{\q}{\symbf{q}} % Wave vector.
-
-% Polarizing operator notation ----------------------
+% Quantum notation ----------------------
 \newcommand{\op}[1]{\hat{\symup{#1}}} % upright and hat on operators
+\newcommand{\ketbra}[2]{\ket{#1}\!\!\bra{#2}} % ket glued to bra, for matrix elements
 
-% Commentaires et rédactions -----------------------
+
+% Comments -----------------------
 \newcommand{\red}[1]{{\color{red}#1}}
 % \newcommand{\comment}[1]{\marginpar{\parbox[b]{\marginparwidth}{\color{red}#1}}}
 
-% fixing the hat commands
 
-%%% Boxes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Boxes                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Names for theorem box type environments
+% Box title language support --------------------
 \addto\captionsfrench{\def\theoremname{Théorème}}
 \addto\captionsenglish{\def\theoremname{Theorem}}
 
@@ -124,9 +138,8 @@
 \addto\captionsfrench{\def\lemmaname{Lemme}}
 \addto\captionsenglish{\def\lemmaname{Lemma}}
 
-%%% Colored boxes
 
-% Robust color boxes that can be used even within aligns
+% Math boxes -----------------------
 \makeatletter
 \newcommand{\cboxed}[1]{%
   \mathchoice
@@ -147,12 +160,9 @@
 }
 \makeatother
 
-%-----------------------------%
-% Define a reusable box style %
-%-----------------------------%
 
-% numbered and colored with the MainColor
-\tcbset{
+% Box styles -----------------------
+\tcbset{ % numbered + MainColor
 namedcolorstyle/.style={
     fonttitle=\bfseries\upshape, % bold upright title
     fontupper=\upshape, % upright body font
@@ -169,8 +179,7 @@ namedcolorstyle/.style={
 }
 }
 
-% unnumbered and colored
-\tcbset{
+\tcbset{ % unnumbered + MainColor
 unnamedcolorstyle/.style={
     arc=0mm, % sharpish corner
     colback=MainColor!2, % color of the background
@@ -185,8 +194,7 @@ unnamedcolorstyle/.style={
 }
 }
 
-% unnumbered and highlight
-\tcbset{
+\tcbset{ % unnumbered + HighlightColor
 unnamedhighlightstyle/.style={
     arc=0mm, % sharpish corner
     colback=HighlightColor!2, % color of the background
@@ -201,10 +209,8 @@ unnamedhighlightstyle/.style={
 }
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-% Defining named boxes %
-%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Defining colored boxes ------------------------
+% named
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{theorembox}%
     {\theoremname}{namedcolorstyle}{theorem}
 
@@ -220,10 +226,7 @@ unnamedhighlightstyle/.style={
 \newtcbtheorem[auto counter,number within=\boxesnumberwithin]{lemmabox}%
     {\lemmaname}{namedcolorstyle}{lemma}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Defining unnamed boxes %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% unnamed
 \newtcolorbox{cbox}{
   unnamedcolorstyle
 }
