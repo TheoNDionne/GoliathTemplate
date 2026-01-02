@@ -1,6 +1,6 @@
 # **Codex: A minimal multiformat LuaLaTeX template**
 ------------------------------------------------
-## ***Description***
+## **Description**
 
 This repository contains a flexible and minimalistic LuaLaTeX template that can be used to typeset:
 - **longform** documents (theses, formal reports, ...)
@@ -9,21 +9,23 @@ This repository contains a flexible and minimalistic LuaLaTeX template that can 
 
 The main philosophy of this project is to provide a versatile template with minimal busywork. In particular, these templates use the same preamble where documentclass-specific information is stored in class specific files.
 
-## ***Basic usage***
+## **Basic usage**
 
 Copy the `Codex` repository that actually contains the template and you should be good to go! A couple basic commands are given below.
 
-#### **Compilation**
+#### ***Compilation***
 
 Go to `Codex/` and run `latexmk`. Compilation should automatically proceed by reading the `latexmkrc` file. If you have many `.tex` files in `Codex/`, the addition of a target will clear all ambiguity (e.g. `latexmk MAIN.tex`)
 
-#### **Cleaning**
+#### ***Cleaning***
 
 Still in `Codex/`, run `latexmk -C` and the cleanup should also proceed automagically.
 
-## ***Contents & structure***
+## **Contents & structure**
 
-**Coming eventually**
+**Coming eventually ...**
+
+
 
 ------------------------------------------------
 ## ***Geneology & Credits***
@@ -44,8 +46,8 @@ GNU GPL v3 (as included).
 
 #### *Priority*
 
-- Crisp up `macros.sty`
 - Make a clean example document for each
+- Figure out what I want to do for tikz and pgfplots.
 
 #### *Beamer*
 
@@ -53,11 +55,11 @@ GNU GPL v3 (as included).
 
 #### *Backburner*
 
+- Do big picture tightening
 - Figure out how to do bibliographies in a modern way...
-- Figure out what I want to do for tikz and pgfplots.
 - Update subcaption.
 - Add back in pdfx as a tourdeforce
-- Do big picture tightening
+- Comment uniformization
 
 -----------------------------------------------
 ### Backstore
@@ -69,5 +71,5 @@ In summary, my main contributions are:
 - Flexible **colored boxes** (both in math mode and "theorem" boxes)
 - More math **macros** (mostly physics oriented)
 - Fixing some dicey package interactions (by nuking them)
-- Making a derived
+- Making a derived shortform template to match the longform
 - *coming soon :* A mathching template for making beamers that don't hurt the eyes. Inspo : **Antoine de Lagrave**'s clean an minimalist one published within [UniTeX](https://github.com/antoinedelagrave/UniTeX).
