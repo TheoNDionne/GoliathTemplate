@@ -40,6 +40,7 @@ GNU GPL v3 (as included).
 
 ## ***Todo***
 
+-
 - Grand name uniformization tour
 - Write the contents and structure
 - Organize and partition `MAIN.tex`
@@ -52,6 +53,7 @@ GNU GPL v3 (as included).
 #### *Beamer*
 
 - Fix bibliography... ugly
+- Add a big section divider slide macro or figure out how to do natively.
 
 #### *Backburner*
 
